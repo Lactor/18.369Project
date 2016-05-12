@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+\pagestyle{plain}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage[top=2.5cm, left=2.0cm, right=2.0cm, bottom=2.5cm]{geometry}
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+%\restylefloat{table}
+%\restylefloat{figure}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{dsfont}
+\usepackage{amsfonts}
+\usepackage{cancel}
+\usepackage{bm}
+
+\newcommand{\horline}{\begin{center} \line(1,0){470} \end{center}}
+
+\DeclareMathOperator{\sech}{sech}
+
+\author{Francisco Machado}
+\title{Final Project Proposal}
+\begin{document}
+\maketitle
+
+I would like to investigate the how the topology of the photonic modes can enable new bound states in the continuum.
+
+In finite width photonic crystal slabs, there are bound modes inside the light cone of outside radiation. The finitude of the slab allows these bound modes to couple to the outward radiative modes, leading to leaky modes which means that the modes attenuate with time, have finite quality factor $Q$.. In the paper by Zhen \emph{et al.} \cite{zhen2014}, it is shown that there can be modes where this coupling is zero, allowing for modes inside the light cone to be very long lived, theoretically infinite $Q$. The reason why the modes decouple arises from the topology of the polarization of the photonic slab modes, which leads to modes with no overall average polarization.
+
+In my project I would like to delve deep into this phenomena. I want to explore its theoretical basis and replicate the results presented in the paper for the square lattice cylindrical rod photonic slab.
+
+Moreover, I want to extend the paper's results in two ways:
+\begin{itemize}
+\item Attempt a new geometry where this phenomena occurs. The existence of these modes is protected by $C_2^zT$ and $\sigma_z$ symmetries (rotation by 180$^\circ$ in the slab plane, time reversal, and mirror symmetry in the x-y plane). The simplest other structure where this would occur would be the hexagonal lattice of cylindrical rods, but a more complex may be considered.
+\item Understand how robust the results are when the symmetry is broken, by changing the geometry a bit and measuring its effect on the quality factor of the modes.
+\end{itemize}
+
+Since I need to compute the quality factors for a lossy system, I will be using MEEP to simulate the structures and it responds when a dipole source is used to excited its modes.
+
+\bibliographystyle{ieeetr}
+
+\bibliography{Proposal2}
+
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+* Todos
+** DONE setup Meep simulation
+** DONE Compute some ressonances and check the with meep (have done k=0)
+** TODO Replicate the results from the paper for our geometry
+** TODO Compute a complete band structure
+** TODO Make code to compute the polarization vector correctly
+** TODO Reread the papers for what new structures we can consider
+** TODO Compute the polarization vector for a part of the BZ
+** TODO Check for the topological terms of interest.
+
+* Notes
+E_z excites the TM modes as expected

@@ -1,0 +1,37 @@
+\documentclass[11pt]{article}
+\pagestyle{plain}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage[top=2.5cm, left=2.0cm, right=2.0cm, bottom=2.5cm]{geometry}
+\newcommand{\unit}[1]{\ensuremath{\, \mathrm{#1}}}
+%\restylefloat{table}
+%\restylefloat{figure}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{dsfont}
+\usepackage{amsfonts}
+\usepackage{cancel}
+\usepackage{bm}
+
+\newcommand{\horline}{\begin{center} \line(1,0){470} \end{center}}
+
+\DeclareMathOperator{\sech}{sech}
+
+\author{Francisco Machado}
+\title{Final Project Proposal}
+\begin{document}
+\maketitle
+
+I would like to investigate the topological nature of photonic structures for my final example.
+
+This project would be divided in two parts, the first part would consist on a comprehensive development of the topology ideas in photonic systems. This would imply the presentation of the topics of topology, how they relate to photonic systems, and how the two ideas interact to create novel properties and phenomena. This discussion will have this paper \cite{Lu2014} as a basis, from where the concepts will be expanded.
+
+The second part of the project would consist on the computational investigation realization of a topological non-trivial system, in particular unidirectional transmition of light in the boundary of a photonic system \cite{Wang2009}. Since we are interested in the time evolution of the system to understand the propagation of radiation at the boundary of the system,  I will be using MEEP to simulate such structures.  Given enough time, other phenomena associated with topology will be explored.
+
+\bibliographystyle{ieeetr}
+
+\bibliography{Proposal}
+
+
+\end{document}
