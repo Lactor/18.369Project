@@ -34,16 +34,7 @@
 					; Position of the source means only odd TE modes
 
 
-(run-k-point 10 (vector3 0.2 0 0))
-(run-until (/ 1 fcen)
-	   (at-beginning output-epsilon)
-	   (at-every (/ 1 fcen 20) output-hfield-x)
-	   (at-every (/ 1 fcen 20) output-hfield-y)
-	   (at-every (/ 1 fcen 20) output-hfield-z)
-	   (at-every (/ 1 fcen 20) output-efield-x)
-	   (at-every (/ 1 fcen 20) output-efield-y)
-	   (at-every (/ 1 fcen 20) output-efield-z)
-	    )
+i
 ;(define-param k-interp 5)
 ;(run-k-points 20 (interpolate k-interp (list (vector3 0 0 0) (vector3 0.5 0 0 ))))
 

@@ -1,0 +1,173 @@
+fmachado@W20-575-19:~/18369/18.369Project/MeepTest$ ls
+bandStructure.ctl		SingleFreq-hx-000261.35.png  squareFI.out	    test-ez-001011.14.png
+bandStructure.ctl~		SingleFreq-hx-000261.69.h5   squareFR2.out	    test-ez-001011.23.h5
+bandStructure-eps-000000.00.h5	SingleFreq-hx-000261.69.png  squareFR.out	    test-ez-001011.23.png
+EzkxFI.out			SingleFreq-hx-000262.03.h5   squareFR.out~	    test-ez-001011.31.h5
+EzkxF.out			SingleFreq-hx-000262.03.png  squareHzkx.out	    test-ez-001011.31.png
+freqsEz.out			SingleFreq-hx-000262.36.h5   square.out		    test-ez-001011.40.h5
+freqsHz.out			SingleFreq-hx-000262.36.png  test.ctl		    test-ez-001011.40.png
+freqsHz.out~			SingleFreq-hx-000262.70.h5   test.ctl~		    test-ez-001011.49.h5
+freqs.out			SingleFreq-hx-000262.70.png  test-eps-000000.00.h5  test-ez-001011.49.png
+freqs.out~			SingleFreq-hx-000263.04.h5   test-eps-001010.00.h5  test-ez-001011.58.h5
+HzkxFI.out			SingleFreq-hx-000263.04.png  test-eps-001050.00.h5  test-ez-001011.58.png
+HzkxF.out			SingleFreq-hx-000263.38.h5   test-ex-001010.09.h5   test-ez-001011.66.h5
+PlotBand.py			SingleFreq-hx-000263.38.png  test-ex-001010.09.png  test-ez-001011.66.png
+PlotBand.py~			SingleFreq-hx-000263.71.h5   test-ex-001010.18.h5   test-hx-001010.09.h5
+replicEzkyT20.out		SingleFreq-hx-000263.71.png  test-ex-001010.18.png  test-hx-001010.18.h5
+replicFI.out			SingleFreq-hx-000264.05.h5   test-ex-001010.26.h5   test-hx-001010.26.h5
+replicFIT20.out			SingleFreq-hx-000264.05.png  test-ex-001010.26.png  test-hx-001010.35.h5
+replicF.out			SingleFreq-hx-000264.39.h5   test-ex-001010.35.h5   test-hx-001010.44.h5
+replicFT20.out			SingleFreq-hx-000264.39.png  test-ex-001010.35.png  test-hx-001010.53.h5
+replickyEzT20FI.out		SingleFreq-hx-000264.73.h5   test-ex-001010.44.h5   test-hx-001010.61.h5
+replickyEzT20F.out		SingleFreq-hx-000264.73.png  test-ex-001010.44.png  test-hx-001010.70.h5
+replickyT20FI.out		SingleFreq-hx-000265.06.h5   test-ex-001010.53.h5   test-hx-001010.79.h5
+replickyT20F.out		SingleFreq-hx-000265.06.png  test-ex-001010.53.png  test-hx-001010.88.h5
+replickyT20.out			SingleFreq-hx-000265.40.h5   test-ex-001010.61.h5   test-hx-001010.96.h5
+replic.out			SingleFreq-hx-000265.40.png  test-ex-001010.61.png  test-hx-001011.05.h5
+replicT20.out			SingleFreq-hx-000265.74.h5   test-ex-001010.70.h5   test-hx-001011.14.h5
+SingleFreq.ctl			SingleFreq-hx-000265.74.png  test-ex-001010.70.png  test-hx-001011.23.h5
+SingleFreq.ctl~			SingleFreq-hx-000266.07.h5   test-ex-001010.79.h5   test-hx-001011.31.h5
+SingleFreq-eps-000260.00.h5	SingleFreq-hx-000266.07.png  test-ex-001010.79.png  test-hx-001011.40.h5
+SingleFreq-ex-000260.34.h5	SingleFreq-hx-000266.41.h5   test-ex-001010.88.h5   test-hx-001011.49.h5
+SingleFreq-ex-000260.68.h5	SingleFreq-hx-000266.41.png  test-ex-001010.88.png  test-hx-001011.58.h5
+SingleFreq-ex-000261.01.h5	SingleFreq-hy-000260.34.h5   test-ex-001010.96.h5   test-hx-001011.66.h5
+SingleFreq-ex-000261.35.h5	SingleFreq-hy-000260.34.png  test-ex-001010.96.png  test-hy-001010.09.h5
+SingleFreq-ex-000261.69.h5	SingleFreq-hy-000260.68.h5   test-ex-001011.05.h5   test-hy-001010.18.h5
+SingleFreq-ex-000262.03.h5	SingleFreq-hy-000260.68.png  test-ex-001011.05.png  test-hy-001010.26.h5
+SingleFreq-ex-000262.36.h5	SingleFreq-hy-000261.01.h5   test-ex-001011.14.h5   test-hy-001010.35.h5
+SingleFreq-ex-000262.70.h5	SingleFreq-hy-000261.01.png  test-ex-001011.14.png  test-hy-001010.44.h5
+SingleFreq-ex-000263.04.h5	SingleFreq-hy-000261.35.h5   test-ex-001011.23.h5   test-hy-001010.53.h5
+SingleFreq-ex-000263.38.h5	SingleFreq-hy-000261.35.png  test-ex-001011.23.png  test-hy-001010.61.h5
+SingleFreq-ex-000263.71.h5	SingleFreq-hy-000261.69.h5   test-ex-001011.31.h5   test-hy-001010.70.h5
+SingleFreq-ex-000264.05.h5	SingleFreq-hy-000261.69.png  test-ex-001011.31.png  test-hy-001010.79.h5
+SingleFreq-ex-000264.39.h5	SingleFreq-hy-000262.03.h5   test-ex-001011.40.h5   test-hy-001010.88.h5
+SingleFreq-ex-000264.73.h5	SingleFreq-hy-000262.03.png  test-ex-001011.40.png  test-hy-001010.96.h5
+SingleFreq-ex-000265.06.h5	SingleFreq-hy-000262.36.h5   test-ex-001011.49.h5   test-hy-001011.05.h5
+SingleFreq-ex-000265.40.h5	SingleFreq-hy-000262.36.png  test-ex-001011.49.png  test-hy-001011.14.h5
+SingleFreq-ex-000265.74.h5	SingleFreq-hy-000262.70.h5   test-ex-001011.58.h5   test-hy-001011.23.h5
+SingleFreq-ex-000266.07.h5	SingleFreq-hy-000262.70.png  test-ex-001011.58.png  test-hy-001011.31.h5
+SingleFreq-ex-000266.41.h5	SingleFreq-hy-000263.04.h5   test-ex-001011.66.h5   test-hy-001011.40.h5
+SingleFreq-ey-000260.34.h5	SingleFreq-hy-000263.04.png  test-ex-001011.66.png  test-hy-001011.49.h5
+SingleFreq-ey-000260.68.h5	SingleFreq-hy-000263.38.h5   test-ey-001010.09.h5   test-hy-001011.58.h5
+SingleFreq-ey-000261.01.h5	SingleFreq-hy-000263.38.png  test-ey-001010.09.png  test-hy-001011.66.h5
+SingleFreq-ey-000261.35.h5	SingleFreq-hy-000263.71.h5   test-ey-001010.18.h5   test-hz-001010.09.h5
+SingleFreq-ey-000261.69.h5	SingleFreq-hy-000263.71.png  test-ey-001010.18.png  test-hz-001010.09.png
+SingleFreq-ey-000262.03.h5	SingleFreq-hy-000264.05.h5   test-ey-001010.26.h5   test-hz-001010.18.h5
+SingleFreq-ey-000262.36.h5	SingleFreq-hy-000264.05.png  test-ey-001010.26.png  test-hz-001010.18.png
+SingleFreq-ey-000262.70.h5	SingleFreq-hy-000264.39.h5   test-ey-001010.35.h5   test-hz-001010.26.h5
+SingleFreq-ey-000263.04.h5	SingleFreq-hy-000264.39.png  test-ey-001010.35.png  test-hz-001010.26.png
+SingleFreq-ey-000263.38.h5	SingleFreq-hy-000264.73.h5   test-ey-001010.44.h5   test-hz-001010.35.h5
+SingleFreq-ey-000263.71.h5	SingleFreq-hy-000264.73.png  test-ey-001010.44.png  test-hz-001010.35.png
+SingleFreq-ey-000264.05.h5	SingleFreq-hy-000265.06.h5   test-ey-001010.53.h5   test-hz-001010.44.h5
+SingleFreq-ey-000264.39.h5	SingleFreq-hy-000265.06.png  test-ey-001010.53.png  test-hz-001010.44.png
+SingleFreq-ey-000264.73.h5	SingleFreq-hy-000265.40.h5   test-ey-001010.61.h5   test-hz-001010.53.h5
+SingleFreq-ey-000265.06.h5	SingleFreq-hy-000265.40.png  test-ey-001010.61.png  test-hz-001010.53.png
+SingleFreq-ey-000265.40.h5	SingleFreq-hy-000265.74.h5   test-ey-001010.70.h5   test-hz-001010.61.h5
+SingleFreq-ey-000265.74.h5	SingleFreq-hy-000265.74.png  test-ey-001010.70.png  test-hz-001010.61.png
+SingleFreq-ey-000266.07.h5	SingleFreq-hy-000266.07.h5   test-ey-001010.79.h5   test-hz-001010.70.h5
+SingleFreq-ey-000266.41.h5	SingleFreq-hy-000266.07.png  test-ey-001010.79.png  test-hz-001010.70.png
+SingleFreq-ez-000260.34.h5	SingleFreq-hy-000266.41.h5   test-ey-001010.88.h5   test-hz-001010.79.h5
+SingleFreq-ez-000260.34.png	SingleFreq-hy-000266.41.png  test-ey-001010.88.png  test-hz-001010.79.png
+SingleFreq-ez-000260.68.h5	SingleFreq-hz-000260.34.h5   test-ey-001010.96.h5   test-hz-001010.88.h5
+SingleFreq-ez-000260.68.png	SingleFreq-hz-000260.34.png  test-ey-001010.96.png  test-hz-001010.88.png
+SingleFreq-ez-000261.01.h5	SingleFreq-hz-000260.68.h5   test-ey-001011.05.h5   test-hz-001010.96.h5
+SingleFreq-ez-000261.01.png	SingleFreq-hz-000260.68.png  test-ey-001011.05.png  test-hz-001010.96.png
+SingleFreq-ez-000261.35.h5	SingleFreq-hz-000261.01.h5   test-ey-001011.14.h5   test-hz-001011.05.h5
+SingleFreq-ez-000261.35.png	SingleFreq-hz-000261.01.png  test-ey-001011.14.png  test-hz-001011.05.png
+SingleFreq-ez-000261.69.h5	SingleFreq-hz-000261.35.h5   test-ey-001011.23.h5   test-hz-001011.14.h5
+SingleFreq-ez-000261.69.png	SingleFreq-hz-000261.35.png  test-ey-001011.23.png  test-hz-001011.14.png
+SingleFreq-ez-000262.03.h5	SingleFreq-hz-000261.69.h5   test-ey-001011.31.h5   test-hz-001011.23.h5
+SingleFreq-ez-000262.03.png	SingleFreq-hz-000261.69.png  test-ey-001011.31.png  test-hz-001011.23.png
+SingleFreq-ez-000262.36.h5	SingleFreq-hz-000262.03.h5   test-ey-001011.40.h5   test-hz-001011.31.h5
+SingleFreq-ez-000262.36.png	SingleFreq-hz-000262.03.png  test-ey-001011.40.png  test-hz-001011.31.png
+SingleFreq-ez-000262.70.h5	SingleFreq-hz-000262.36.h5   test-ey-001011.49.h5   test-hz-001011.40.h5
+SingleFreq-ez-000262.70.png	SingleFreq-hz-000262.36.png  test-ey-001011.49.png  test-hz-001011.40.png
+SingleFreq-ez-000263.04.h5	SingleFreq-hz-000262.70.h5   test-ey-001011.58.h5   test-hz-001011.49.h5
+SingleFreq-ez-000263.04.png	SingleFreq-hz-000262.70.png  test-ey-001011.58.png  test-hz-001011.49.png
+SingleFreq-ez-000263.38.h5	SingleFreq-hz-000263.04.h5   test-ey-001011.66.h5   test-hz-001011.58.h5
+SingleFreq-ez-000263.38.png	SingleFreq-hz-000263.04.png  test-ey-001011.66.png  test-hz-001011.58.png
+SingleFreq-ez-000263.71.h5	SingleFreq-hz-000263.38.h5   test-ez-001010.09.h5   test-hz-001011.66.h5
+SingleFreq-ez-000263.71.png	SingleFreq-hz-000263.38.png  test-ez-001010.09.png  test-hz-001011.66.png
+SingleFreq-ez-000264.05.h5	SingleFreq-hz-000263.71.h5   test-ez-001010.18.h5   test-hz-001050.09.h5
+SingleFreq-ez-000264.05.png	SingleFreq-hz-000263.71.png  test-ez-001010.18.png  test-hz-001050.17.h5
+SingleFreq-ez-000264.39.h5	SingleFreq-hz-000264.05.h5   test-ez-001010.26.h5   test-hz-001050.26.h5
+SingleFreq-ez-000264.39.png	SingleFreq-hz-000264.05.png  test-ez-001010.26.png  test-hz-001050.35.h5
+SingleFreq-ez-000264.73.h5	SingleFreq-hz-000264.39.h5   test-ez-001010.35.h5   test-hz-001050.44.h5
+SingleFreq-ez-000264.73.png	SingleFreq-hz-000264.39.png  test-ez-001010.35.png  test-hz-001050.53.h5
+SingleFreq-ez-000265.06.h5	SingleFreq-hz-000264.73.h5   test-ez-001010.44.h5   test-hz-001050.61.h5
+SingleFreq-ez-000265.06.png	SingleFreq-hz-000264.73.png  test-ez-001010.44.png  test-hz-001050.70.h5
+SingleFreq-ez-000265.40.h5	SingleFreq-hz-000265.06.h5   test-ez-001010.53.h5   test-hz-001050.79.h5
+SingleFreq-ez-000265.40.png	SingleFreq-hz-000265.06.png  test-ez-001010.53.png  test-hz-001050.88.h5
+SingleFreq-ez-000265.74.h5	SingleFreq-hz-000265.40.h5   test-ez-001010.61.h5   test-hz-001050.96.h5
+SingleFreq-ez-000265.74.png	SingleFreq-hz-000265.40.png  test-ez-001010.61.png  test-hz-001051.05.h5
+SingleFreq-ez-000266.07.h5	SingleFreq-hz-000265.74.h5   test-ez-001010.70.h5   test-hz-001051.14.h5
+SingleFreq-ez-000266.07.png	SingleFreq-hz-000265.74.png  test-ez-001010.70.png  test-hz-001051.23.h5
+SingleFreq-ez-000266.41.h5	SingleFreq-hz-000266.07.h5   test-ez-001010.79.h5   test-hz-001051.31.h5
+SingleFreq-ez-000266.41.png	SingleFreq-hz-000266.07.png  test-ez-001010.79.png  test-hz-001051.40.h5
+SingleFreq-hx-000260.34.h5	SingleFreq-hz-000266.41.h5   test-ez-001010.88.h5   test-hz-001051.49.h5
+SingleFreq-hx-000260.34.png	SingleFreq-hz-000266.41.png  test-ez-001010.88.png  test-hz-001051.58.h5
+SingleFreq-hx-000260.68.h5	square2.out		     test-ez-001010.96.h5   test-hz-001051.66.h5
+SingleFreq-hx-000260.68.png	square2.out~		     test-ez-001010.96.png  test.out
+SingleFreq-hx-000261.01.h5	square3.out		     test-ez-001011.05.h5
+SingleFreq-hx-000261.01.png	squareEzkx.out		     test-ez-001011.05.png
+SingleFreq-hx-000261.35.h5	squareFI2.out		     test-ez-001011.14.h5
+fmachado@W20-575-19:~/18369/18.369Project/MeepTest$ python PlotBand.py
+SingleFreq-hx-000261.01.h5	square3.out		     test-ez-001011.05.h5  C-c C-cTraceback (most recent call last):
+  File "PlotBand.py", line 43, in <module>
+    plt.show()
+  File "/usr/lib/pymodules/python2.7/matplotlib/pyplot.py", line 145, in show
+    _show(*args, **kw)
+  File "/usr/lib/pymodules/python2.7/matplotlib/backend_bases.py", line 117, in __call__
+    self.mainloop()
+  File "/usr/lib/pymodules/python2.7/matplotlib/backends/backend_tkagg.py", line 69, in mainloop
+    Tk.mainloop()
+  File "/usr/lib/python2.7/lib-tk/Tkinter.py", line 366, in mainloop
+    _default_root.tk.mainloop(n)
+KeyboardInterrupt
+fmachado@W20-575-19:~/18369/18.369Project/MeepTest$ meep bandStructure.ctl
+-----------
+Initializing structure...
+Working in 3D dimensions.
+Computational cell is 1 x 0 x 10 with resolution 40
+     block, center = (0,0,0)
+          size (0.45,1e+20,1.5)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (2.1,2.1,2.1)
+Padding y to even number of grid points.
+Halving computational cell along direction y
+time for set_epsilon = 0.171271 s
+-----------
+creating output file "./bandStructure-eps-000000.00.h5"...
+Meep progress: 37.4/53.3333320617676 = 70.1% done in 4.0s, 1.7s to go
+on time step 2992 (time=37.4), 0.00133732 s/step
+harminv0:, frequency, imag. freq., Q, |amp|, amplitude, error
+run 0 finished at t = 53.3375 (4267 timesteps)
+freqs:, 1, 0, 0, 0
+freqs-im:, 1, 0, 0, 0
+
+Field time usage:
+    connnecting chunks: 0.37691 s
+         time stepping: 2.81187 s
+         communicating: 2.24576 s
+     outputting fields: 0.0322831 s
+    Fourier transforming: 0.000401258 s
+       everything else: 0.119812 s
+
+Meep progress: 13.95/53.3333320617676 = 26.2% done in 4.0s, 11.3s to go
+on time step 1116 (time=13.95), 0.00358459 s/step
+Meep progress: 29.8/53.3333320617676 = 55.9% done in 8.0s, 6.3s to go
+on time step 2384 (time=29.8), 0.00315489 s/step
+Meep progress: 45.5375/53.3333320617676 = 85.4% done in 12.0s, 2.1s to go
+on time step 3643 (time=45.5375), 0.00317952 s/step
+harminv1:, frequency, imag. freq., Q, |amp|, amplitude, error
+run 1 finished at t = 53.3375 (4267 timesteps)
+freqs:, 2, 0.0833333333333334, 0, 0
+freqs-im:, 2, 0.0833333333333334, 0, 0
+Meep progress: 15.275/53.3333320617676 = 28.6% done in 4.0s, 10.0s to go
+on time step 1222 (time=15.275), 0.00327438 s/step
+Meep progress: 30.9/53.3333320617676 = 57.9% done in 8.0s, 5.8s to go
+on time step 2472 (time=30.9), 0.00320244 s/step
+Meep progress: 45.925/53.3333320617676 = 86.1% done in 12.0s, 1.9s to go
+on time step 3674 (time=45.925), 0.00333023 s/step
+  C-c C-c
+fmachado@W20-575-19:~/18369/18.369Project/MeepTest$ 

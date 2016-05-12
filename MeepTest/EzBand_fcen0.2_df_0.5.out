@@ -1,0 +1,190 @@
+-----------
+Initializing structure...
+Working in 3D dimensions.
+Computational cell is 1 x 0 x 10 with resolution 40
+     block, center = (0,0,0)
+          size (0.45,1e+20,1.5)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (2.1,2.1,2.1)
+time for set_epsilon = 0.0818689 s
+-----------
+BAND CALCULATIONMeep: using output directory "Results"
+creating output file "Results/EzBand_fcen0.2_df0.5-eps-000000.00.h5"...
+Meep progress: 82.0375/320.0 = 25.6% done in 4.0s, 11.6s to go
+on time step 6563 (time=82.0375), 0.000609567 s/step
+Meep progress: 171.525/320.0 = 53.6% done in 8.0s, 6.9s to go
+on time step 13722 (time=171.525), 0.000558759 s/step
+Meep progress: 258.4625/320.0 = 80.8% done in 12.0s, 2.9s to go
+on time step 20677 (time=258.463), 0.000575133 s/step
+harminv0:, frequency, imag. freq., Q, |amp|, amplitude, error
+run 0 finished at t = 320.0 (25600 timesteps)
+freqs:, 1, 0, 0, 0
+freqs-im:, 1, 0, 0, 0
+
+Field time usage:
+    connnecting chunks: 0.289322 s
+         time stepping: 5.37434 s
+         communicating: 8.59787 s
+     outputting fields: 0.00294304 s
+    Fourier transforming: 0.0013361 s
+       everything else: 0.532963 s
+
+Meep: using output directory "Results"
+Meep progress: 27.075/320.0 = 8.5% done in 4.0s, 43.3s to go
+on time step 2166 (time=27.075), 0.00184751 s/step
+Meep progress: 55.0875/320.0 = 17.2% done in 8.0s, 38.5s to go
+on time step 4407 (time=55.0875), 0.00178519 s/step
+Meep progress: 82.9625/320.0 = 25.9% done in 12.0s, 34.3s to go
+on time step 6637 (time=82.9625), 0.00179414 s/step
+Meep progress: 111.9/320.0 = 35.0% done in 16.0s, 29.8s to go
+on time step 8952 (time=111.9), 0.00172821 s/step
+Meep progress: 140.6375/320.0 = 43.9% done in 20.0s, 25.5s to go
+on time step 11251 (time=140.638), 0.00174005 s/step
+Meep progress: 169.375/320.0 = 52.9% done in 24.0s, 21.3s to go
+on time step 13550 (time=169.375), 0.00174075 s/step
+Meep progress: 198.95/320.0 = 62.2% done in 28.0s, 17.0s to go
+on time step 15916 (time=198.95), 0.0016908 s/step
+Meep progress: 227.9625/320.0 = 71.2% done in 32.0s, 12.9s to go
+on time step 18237 (time=227.963), 0.00172402 s/step
+Meep progress: 257.4875/320.0 = 80.5% done in 36.0s, 8.7s to go
+on time step 20599 (time=257.488), 0.00169349 s/step
+Meep progress: 287.0875/320.0 = 89.7% done in 40.0s, 4.6s to go
+on time step 22967 (time=287.088), 0.0016893 s/step
+Meep progress: 316.3/320.0 = 98.8% done in 44.0s, 0.5s to go
+on time step 25304 (time=316.3), 0.00171164 s/step
+harminv1:, frequency, imag. freq., Q, |amp|, amplitude, error
+harminv1:, 0.0829510562870689, 4.74610471168424e-4, -87.388565282657, 0.0050985452733028, -0.00430247414713583-0.00273566812993574i, 3.27708269842527e-9
+run 1 finished at t = 320.0 (25600 timesteps)
+freqs:, 2, 0.0833333333333334, 0, 0, 0.0829510562870689
+freqs-im:, 2, 0.0833333333333334, 0, 0, 4.74610471168424e-4
+Meep progress: 28.8625/320.0 = 9.0% done in 4.0s, 40.4s to go
+on time step 2309 (time=28.8625), 0.00173269 s/step
+Meep progress: 58.4/320.0 = 18.2% done in 8.0s, 35.8s to go
+on time step 4672 (time=58.4), 0.00169287 s/step
+Meep progress: 87.95/320.0 = 27.5% done in 12.0s, 31.7s to go
+on time step 7036 (time=87.95), 0.00169275 s/step
+Meep progress: 117.4125/320.0 = 36.7% done in 16.0s, 27.6s to go
+on time step 9393 (time=117.413), 0.00169755 s/step
+Meep progress: 146.3875/320.0 = 45.7% done in 20.0s, 23.7s to go
+on time step 11711 (time=146.388), 0.001726 s/step
+Meep progress: 170.0625/320.0 = 53.1% done in 24.0s, 21.2s to go
+on time step 13605 (time=170.062), 0.00211238 s/step
+Meep progress: 195.775/320.0 = 61.2% done in 28.0s, 17.8s to go
+on time step 15662 (time=195.775), 0.00194475 s/step
+Meep progress: 224.35/320.0 = 70.1% done in 32.0s, 13.6s to go
+on time step 17948 (time=224.35), 0.00174994 s/step
+Meep progress: 251.675/320.0 = 78.6% done in 36.0s, 9.8s to go
+on time step 20134 (time=251.675), 0.00183048 s/step
+Meep progress: 280.2125/320.0 = 87.6% done in 40.0s, 5.7s to go
+on time step 22417 (time=280.213), 0.00175283 s/step
+Meep progress: 305.9125/320.0 = 95.6% done in 44.0s, 2.0s to go
+on time step 24473 (time=305.913), 0.00194632 s/step
+harminv2:, frequency, imag. freq., Q, |amp|, amplitude, error
+harminv2:, 0.164113924466815, 2.46739487436599e-4, -332.565180733353, 0.0897361539984871, 0.089713768705881+0.00200425523022171i, 2.51294790111404e-9
+run 2 finished at t = 320.0 (25600 timesteps)
+freqs:, 3, 0.166666666666667, 0, 0, 0.164113924466815
+freqs-im:, 3, 0.166666666666667, 0, 0, 2.46739487436599e-4
+Meep progress: 28.9625/320.0 = 9.1% done in 4.0s, 40.2s to go
+on time step 2317 (time=28.9625), 0.00172692 s/step
+Meep progress: 58.475/320.0 = 18.3% done in 8.0s, 35.8s to go
+on time step 4678 (time=58.475), 0.00169478 s/step
+Meep progress: 88.575/320.0 = 27.7% done in 12.0s, 31.4s to go
+on time step 7086 (time=88.575), 0.00166141 s/step
+Meep progress: 118.1625/320.0 = 36.9% done in 16.0s, 27.3s to go
+on time step 9453 (time=118.163), 0.00169019 s/step
+Meep progress: 148.2375/320.0 = 46.3% done in 20.0s, 23.2s to go
+on time step 11859 (time=148.238), 0.00166273 s/step
+Meep progress: 178.4/320.0 = 55.8% done in 24.0s, 19.1s to go
+on time step 14272 (time=178.4), 0.0016582 s/step
+Meep progress: 208.4875/320.0 = 65.2% done in 28.0s, 15.0s to go
+on time step 16679 (time=208.488), 0.00166224 s/step
+Meep progress: 238.525/320.0 = 74.5% done in 32.0s, 10.9s to go
+on time step 19082 (time=238.525), 0.0016648 s/step
+Meep progress: 268.65/320.0 = 84.0% done in 36.0s, 6.9s to go
+on time step 21492 (time=268.65), 0.00166012 s/step
+Meep progress: 298.7625/320.0 = 93.4% done in 40.0s, 2.8s to go
+on time step 23901 (time=298.762), 0.0016607 s/step
+harminv3:, frequency, imag. freq., Q, |amp|, amplitude, error
+harminv3:, 0.236951776675376, -1.65242382156573e-4, 716.98245202873, 0.481345019570013, 0.364370215492493+0.314527222870788i, 2.090782686308e-10
+run 3 finished at t = 320.0 (25600 timesteps)
+freqs:, 4, 0.25, 0, 0, 0.236951776675376
+freqs-im:, 4, 0.25, 0, 0, -1.65242382156573e-4
+Meep progress: 29.4125/320.0 = 9.2% done in 4.0s, 39.5s to go
+on time step 2353 (time=29.4125), 0.00170045 s/step
+Meep progress: 59.4625/320.0 = 18.6% done in 8.0s, 35.1s to go
+on time step 4757 (time=59.4625), 0.00166396 s/step
+Meep progress: 89.575/320.0 = 28.0% done in 12.0s, 30.9s to go
+on time step 7166 (time=89.575), 0.00166071 s/step
+Meep progress: 119.5/320.0 = 37.3% done in 16.0s, 26.8s to go
+on time step 9561 (time=119.513), 0.00167101 s/step
+Meep progress: 149.5/320.0 = 46.7% done in 20.0s, 22.8s to go
+on time step 11961 (time=149.513), 0.00166703 s/step
+Meep progress: 178.9/320.0 = 55.9% done in 24.0s, 18.9s to go
+on time step 14313 (time=178.913), 0.00170121 s/step
+Meep progress: 208.8625/320.0 = 65.3% done in 28.0s, 14.9s to go
+on time step 16710 (time=208.875), 0.00166923 s/step
+Meep progress: 238.3875/320.0 = 74.5% done in 32.0s, 11.0s to go
+on time step 19072 (time=238.4), 0.00169411 s/step
+Meep progress: 268.3375/320.0 = 83.9% done in 36.0s, 6.9s to go
+on time step 21468 (time=268.35), 0.00166954 s/step
+Meep progress: 297.5375/320.0 = 93.0% done in 40.0s, 3.0s to go
+on time step 23804 (time=297.55), 0.00171277 s/step
+harminv4:, frequency, imag. freq., Q, |amp|, amplitude, error
+harminv4:, 0.308277140969432, 2.92800999050301e-5, -5264.27747803675, 0.420420674251918, -0.361908289865821+0.213953109500268i, 2.34926007356616e-9
+harminv4:, 0.333375531708255, -0.00320298290571736, 52.0414160052455, 0.00740788259927795, 0.00460424994195198-0.00580324108380138i, 1.37290869778553e-6
+run 4 finished at t = 320.0 (25600 timesteps)
+freqs:, 5, 0.333333333333333, 0, 0, 0.308277140969432, 0.333375531708255
+freqs-im:, 5, 0.333333333333333, 0, 0, 2.92800999050301e-5, -0.00320298290571736
+Meep progress: 29.3625/320.0 = 9.2% done in 4.0s, 39.6s to go
+on time step 2349 (time=29.3625), 0.00170295 s/step
+Meep progress: 59.3875/320.0 = 18.6% done in 8.0s, 35.1s to go
+on time step 4751 (time=59.3875), 0.00166546 s/step
+Meep progress: 89.35/320.0 = 27.9% done in 12.0s, 31.0s to go
+on time step 7148 (time=89.35), 0.00166877 s/step
+Meep progress: 119.3875/320.0 = 37.3% done in 16.0s, 26.9s to go
+on time step 9551 (time=119.388), 0.00166499 s/step
+Meep progress: 149.4375/320.0 = 46.7% done in 20.0s, 22.8s to go
+on time step 11955 (time=149.438), 0.00166396 s/step
+Meep progress: 179.575/320.0 = 56.1% done in 24.0s, 18.8s to go
+on time step 14366 (time=179.575), 0.00165944 s/step
+Meep progress: 209.5875/320.0 = 65.5% done in 28.0s, 14.8s to go
+on time step 16767 (time=209.588), 0.00166612 s/step
+Meep progress: 239.0375/320.0 = 74.7% done in 32.0s, 10.8s to go
+on time step 19123 (time=239.038), 0.00169822 s/step
+Meep progress: 269.05/320.0 = 84.1% done in 36.0s, 6.8s to go
+on time step 21524 (time=269.05), 0.00166651 s/step
+Meep progress: 299.075/320.0 = 93.5% done in 40.0s, 2.8s to go
+on time step 23926 (time=299.075), 0.00166557 s/step
+harminv5:, frequency, imag. freq., Q, |amp|, amplitude, error
+harminv5:, 0.374481633456769, 1.8740322716128e-6, -99913.3363734685, 0.16348983505456, 0.00298078669024628-0.163462659579717i, 8.72168362370476e-10
+harminv5:, 0.417335825241755, -0.00314479287710708, 66.3534677084465, 7.68762682927455e-4, 7.36378287183373e-4+2.20778352260134e-4i, 2.01618640365712e-6
+run 5 finished at t = 320.0 (25600 timesteps)
+freqs:, 6, 0.416666666666667, 0, 0, 0.374481633456769, 0.417335825241755
+freqs-im:, 6, 0.416666666666667, 0, 0, 1.8740322716128e-6, -0.00314479287710708
+Meep progress: 29.675/320.0 = 9.3% done in 4.0s, 39.1s to go
+on time step 2374 (time=29.675), 0.00168517 s/step
+Meep progress: 59.9875/320.0 = 18.7% done in 8.0s, 34.7s to go
+on time step 4799 (time=59.9875), 0.00164964 s/step
+Meep progress: 90.325/320.0 = 28.2% done in 12.0s, 30.5s to go
+on time step 7226 (time=90.325), 0.00164831 s/step
+Meep progress: 120.6625/320.0 = 37.7% done in 16.0s, 26.4s to go
+on time step 9653 (time=120.663), 0.00164825 s/step
+Meep progress: 150.975/320.0 = 47.2% done in 20.0s, 22.4s to go
+on time step 12078 (time=150.975), 0.00165 s/step
+Meep progress: 181.2875/320.0 = 56.7% done in 24.0s, 18.4s to go
+on time step 14503 (time=181.288), 0.00164982 s/step
+Meep progress: 211.3125/320.0 = 66.0% done in 28.0s, 14.4s to go
+on time step 16905 (time=211.312), 0.00166536 s/step
+Meep progress: 241.65/320.0 = 75.5% done in 32.0s, 10.4s to go
+on time step 19332 (time=241.65), 0.00164856 s/step
+Meep progress: 271.95/320.0 = 85.0% done in 36.0s, 6.4s to go
+on time step 21756 (time=271.95), 0.00165064 s/step
+Meep progress: 302.3125/320.0 = 94.5% done in 40.0s, 2.3s to go
+on time step 24185 (time=302.312), 0.00164698 s/step
+harminv6:, frequency, imag. freq., Q, |amp|, amplitude, error
+harminv6:, 0.41678232889455, -2.45490576165301e-8, 8488764.32254388, 0.0688698041343681, -0.0330150093977297+0.0604405416585098i, 9.73784329961811e-10
+run 6 finished at t = 320.0 (25600 timesteps)
+freqs:, 7, 0.5, 0, 0, 0.41678232889455
+freqs-im:, 7, 0.5, 0, 0, -2.45490576165301e-8
+
+Elapsed run time = 280.424 s
