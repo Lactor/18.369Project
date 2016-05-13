@@ -25,12 +25,13 @@ def load(name):
 #fi = load('replicFI.out')
 
 #frt20 = load('replickyT20F.out')
-hf = load('EzBand_fcen0.7_df0.3_FREQS.out') # TM Modes
-ef = load('HzBand_fcen0.7_df0.3_FREQS.out') # TE Modes
+hf = load('EzSecondBandFreqs.out') # TM Modes
+hfi = load('EzSecondBandFreqsI.out') # TM Modes
+ef = load('HzSecondBandFreqs.out') # TE Modes
+efi = load('HzSecondBandFreqsI.out') # TM Modes
 
-
-plt.axhline(0.7)
-plt.axhspan(0.7 - 0.3, 0.7 + 0.3, alpha = 0.3)
+#plt.axhline(0.7)
+#plt.axhspan(0.7 - 0.3, 0.7 + 0.3, alpha = 0.3)
 
 for i in range(len(ef)):
     x = np.ones(np.shape(hf[i][4:])) * hf[i][1]
@@ -42,5 +43,16 @@ for i in range(len(ef)):
 x = [0,0.5]
 plt.plot(x,x, 'k--')
 
+plt.show()
+
+
+for i in range(len(ef)):
+    x = np.ones(np.shape(hf[i][4:])) * hf[i][1]
+    plt.errorbar(x, hf[i][4:]/(-2*hfi[i][4:]), fmt='bo')
+
+    x = np.ones(np.shape(ef[i][4:])) * ef[i][1]
+    plt.errorbar(x, ef[i][4:]/(-2*efi[i][4:]), fmt='ro')
+
+plt.yscale('log')
 plt.show()
 

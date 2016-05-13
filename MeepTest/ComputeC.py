@@ -14,65 +14,72 @@ def C(filenames, f, kx):
 
     Z,X = np.meshgrid(z,x)
 
-    X = X[:,60:-60]
-    print np.shape(X)
+    tL = 30
+    bL = 60
+    X = X[:-1,tL:bL]
+    #print np.shape(X)
 
-    Fx = F['x'][f+'x.r'][:,60:-60] + 1j* F['x'][f+'x.i'][:,60:-60]
-    Fy = F['y'][f+'y.r'][:,60:-60] + 1j* F['y'][f+'y.i'][:,60:-60]
+    Fx = F['x'][f+'x.r'][:-1,tL:bL] + 1j* F['x'][f+'x.i'][:-1,tL:bL]
+    Fy = F['y'][f+'y.r'][:-1,tL:bL] + 1j* F['y'][f+'y.i'][:-1,tL:bL]
 
     #Fx = F['x'][f+'x.r'][:] + 1j* F['x'][f+'x.i'][:]
     #Fy = F['y'][f+'y.r'][:] + 1j* F['y'][f+'y.i'][:]
 
 
-    #Fx *= np.exp(-1j*kx*X)
-    #Fy *= np.exp(-1j*kx*X)
+    Fx *= np.exp(-1j*kx*X * 2*np.pi)
+    Fy *= np.exp(-1j*kx*X * 2*np.pi)
 
-    plt.imshow(np.transpose(np.real(Fx)))
+    
     #print np.max(np.abs(Fx))
     #print np.min(np.abs(Fx))
     
-    plt.show()
 
     cx = np.sum(Fx)
     cy = np.sum(Fy)
 
-    print cx
-    print cy
-    print np.angle(cx)
+    #print cx
+    #print cy
+    #print np.angle(cx)
 
     cx *= np.exp( -1j*np.angle(cx))
     cy *= np.exp( -1j*np.angle(cx))
 
-    print cx
-    print cy
+    #plt.imshow(np.transpose(np.real(Fx)))
+    #plt.show()
+    
+    plt.plot(np.concatenate( (np.real(Fx[:,0]), np.real(Fx[:,0]) ) , axis = 0 ), 'r')
+    plt.plot(np.concatenate( (np.imag(Fx[:,0]), np.imag(Fx[:,0]) ) , axis = 0 ), 'r--')
+
+    plt.plot(np.concatenate( (np.real(Fy[:,0]), np.real(Fy[:,0]) ) , axis = 0 ), 'b')
+    plt.plot(np.concatenate( (np.imag(Fy[:,0]), np.imag(Fy[:,0]) ) , axis = 0 ), 'b--')
+
+
+    plt.plot(np.concatenate( (np.real(Fx[:,20]), np.real(Fx[:,20]) ) , axis = 0 ), 'r')
+    plt.plot(np.concatenate( (np.imag(Fx[:,20]), np.imag(Fx[:,20]) ) , axis = 0 ), 'r--')
+
+    plt.plot(np.concatenate( (np.real(Fy[:,20]), np.real(Fy[:,20]) ) , axis = 0 ), 'b')
+    plt.plot(np.concatenate( (np.imag(Fy[:,20]), np.imag(Fy[:,20]) ) , axis = 0 ), 'b--')
+
+    print "Dif: ", np.real(Fx[-1,0] - Fx[0,0])
+    plt.show()
+
+    #print cx
+    #print cy
     return (cx, cy)
 
 
 
-filenames = {'x': 'Results/EzSingle_fcen0.655_df0.01_kx0.25_ky0.02-ex-001300.60.h5',
-             'y': 'Results/EzSingle_fcen0.655_df0.01_kx0.25_ky0.02-ey-001300.60.h5'}
+filenames = {'x': 'Results/EzSingle_fcen0.655_df0.01_kx0.25_ky0.02_res20-ex-001303.00.h5',
+             'y': 'Results/EzSingle_fcen0.655_df0.01_kx0.25_ky0.02_res20-ey-001303.00.h5'}
 print "#####"
 print C(filenames, 'e', 0.25)
 print "#####"
 
-filenames = {'x': 'Results/EzSingle_fcen0.655_df0.01-ex-001300.90.h5',
-             'y': 'Results/EzSingle_fcen0.655_df0.01-ey-001300.90.h5'}
+filenames = {'x': 'Results/EzSingle_fcen0.655_df0.01_kx0.25_ky0.02_res20-hx-001303.00.h5',
+             'y': 'Results/EzSingle_fcen0.655_df0.01_kx0.25_ky0.02_res20-hy-001303.00.h5'}
 
-print C(filenames, 'e', 0.25)
-    
-filenames = {'x': 'Results/EzSingle_fcen0.655_df0.01-ex-001301.43.h5',
-             'y': 'Results/EzSingle_fcen0.655_df0.01-ey-001301.43.h5'}
-
-print C(filenames, 'e', 0.25)
-
-
-
-print ""
-
-
-filenames = {'x': 'Results/EzSingle_fcen0.655_df0.01-hx-001301.43.h5',
-             'y': 'Results/EzSingle_fcen0.655_df0.01-hy-001301.43.h5'}
+print "#####"
 print C(filenames, 'h', 0.25)
-
+print "#####"
 
 

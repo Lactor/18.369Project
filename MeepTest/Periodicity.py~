@@ -1,0 +1,6 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import h5fy
+
+
+f = h5py.File('EzSingle_fcen0.655_df0.01_kx0.25_ky0.02-hz-001300.53.h5', 'r')
