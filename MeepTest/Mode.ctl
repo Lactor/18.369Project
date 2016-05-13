@@ -32,7 +32,7 @@
 
 (define-param sourcex 0.1)
 (define-param sourcey 0)
-(define-param sourcey 0.15)
+(define-param sourcez 0.15)
 
 (define-param runtime 300)
 
@@ -106,10 +106,10 @@
 
        (print pi "\n")
        (define (CX r fx)
-	 (* (exp (* -1 (vector3-x r) targetkx 2 pi)) fx )
+	 (* (exp (* -1i (vector3-x r) targetkx 2 pi)) fx )
 	 )
        (define (CY r fy)
-	 (* (exp (* -1 (vector3-x r) targetkx 2 pi)) fy )
+	 (* (exp (* -1i (vector3-x r) targetkx 2 pi)) fy )
 	 )
   
      (run-until (/ 2 fcen)
@@ -121,11 +121,14 @@
 		  (at-every (/ 1 fcen 20) output-efield-y)
 		  (at-every (/ 1 fcen 20) output-efield-z)
 		  )
-     (print "CX_E: " (integrate-field-function (list Ex) CX) "\n")
-     (print "CY_E: " (integrate-field-function (list Ey) CY) "\n")
+     (print "CX_E: " (integrate-field-function (list Ex) CX (volume (size 1 0 0) (center 0 0 (- (/ sz 2) (* dPML 2)) ) )) "\n")
+     (print "CY_E: " (integrate-field-function (list Ey) CY (volume (size 1 0 0) (center 0 0  (- (/ sz 2) (* dPML 2))) ) ) "\n")
 
-     (print "CX_H: " (integrate-field-function (list Hx) CX) "\n")
-     (print "CY_H: " (integrate-field-function (list Hy) CY) "\n")
+     (output-field-function "weird-function" (list Ex) CX)
+
+
+     (print "CX_H: " (integrate-field-function (list Hx) CX (volume (size 1 0 0) (center 0 0 (- (/ sz 2) (* dPML 2))) ) ) "\n")
+     (print "CY_H: " (integrate-field-function (list Hy) CY (volume (size 1 0 0) (center 0 0 (- (/ sz 2) (* dPML 2))) ) ) "\n")
 
        )
 

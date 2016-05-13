@@ -9,26 +9,33 @@ def C(filenames, f, kx):
     F['x'] = h5py.File(filenames['x'], 'r')
     F['y'] = h5py.File(filenames['y'], 'r')
     
-    x = np.arange(-0.5, 0.5+eps, 1.0/(np.shape(F['x'][f+'x.r'][:])[0]-1))
-    z = np.ones((1, np.shape(F['x'][f+'x.r'][:])[1]))
+    x = np.arange(-0.5, 0.5, 1.0/(np.shape(F['x'][f+'x.r'][:])[0]-1))
+    #z = np.ones((1, np.shape(F['x'][f+'x.r'][:])[1]))
+    #Z,X = np.meshgrid(z,x)
 
-    Z,X = np.meshgrid(z,x)
-
-    tL = 30
-    bL = 60
-    X = X[:-1,tL:bL]
+    PlanePosition = 40
+    #bL = 60
+    #X = X[:-1,tL:bL]
     #print np.shape(X)
 
-    Fx = F['x'][f+'x.r'][:-1,tL:bL] + 1j* F['x'][f+'x.i'][:-1,tL:bL]
-    Fy = F['y'][f+'y.r'][:-1,tL:bL] + 1j* F['y'][f+'y.i'][:-1,tL:bL]
+    L = F['x'][f+'x.r'][:]
+    L[:, PlanePosition] = 20
+    plt.imshow(np.transpose(L))
+    plt.colorbar()
+
+    plt.show()
+
+    Fx = F['x'][f+'x.r'][:-1,PlanePosition] + 1j* F['x'][f+'x.i'][:-1,PlanePosition]
+    Fy = F['y'][f+'y.r'][:-1,PlanePosition] + 1j* F['y'][f+'y.i'][:-1,PlanePosition]
 
     #Fx = F['x'][f+'x.r'][:] + 1j* F['x'][f+'x.i'][:]
     #Fy = F['y'][f+'y.r'][:] + 1j* F['y'][f+'y.i'][:]
 
 
-    Fx *= np.exp(-1j*kx*X * 2*np.pi)
-    Fy *= np.exp(-1j*kx*X * 2*np.pi)
+    Fx *= np.exp(-1j*kx*x * 2*np.pi)
+    Fy *= np.exp(-1j*kx*x * 2*np.pi)
 
+    #print Fx
     
     #print np.max(np.abs(Fx))
     #print np.min(np.abs(Fx))
@@ -41,26 +48,20 @@ def C(filenames, f, kx):
     #print cy
     #print np.angle(cx)
 
-    cx *= np.exp( -1j*np.angle(cx))
     cy *= np.exp( -1j*np.angle(cx))
+    cx *= np.exp( -1j*np.angle(cx))
 
     #plt.imshow(np.transpose(np.real(Fx)))
     #plt.show()
     
-    plt.plot(np.concatenate( (np.real(Fx[:,0]), np.real(Fx[:,0]) ) , axis = 0 ), 'r')
-    plt.plot(np.concatenate( (np.imag(Fx[:,0]), np.imag(Fx[:,0]) ) , axis = 0 ), 'r--')
+    #plt.plot(np.concatenate( (np.real(Fx), np.real(Fx) ) , axis = 0 ), 'r')
+    #plt.plot(np.concatenate( (np.imag(Fx), np.imag(Fx) ) , axis = 0 ), 'r--')
 
-    plt.plot(np.concatenate( (np.real(Fy[:,0]), np.real(Fy[:,0]) ) , axis = 0 ), 'b')
-    plt.plot(np.concatenate( (np.imag(Fy[:,0]), np.imag(Fy[:,0]) ) , axis = 0 ), 'b--')
-
-
-    plt.plot(np.concatenate( (np.real(Fx[:,20]), np.real(Fx[:,20]) ) , axis = 0 ), 'r')
-    plt.plot(np.concatenate( (np.imag(Fx[:,20]), np.imag(Fx[:,20]) ) , axis = 0 ), 'r--')
-
-    plt.plot(np.concatenate( (np.real(Fy[:,20]), np.real(Fy[:,20]) ) , axis = 0 ), 'b')
-    plt.plot(np.concatenate( (np.imag(Fy[:,20]), np.imag(Fy[:,20]) ) , axis = 0 ), 'b--')
-
-    print "Dif: ", np.real(Fx[-1,0] - Fx[0,0])
+    #plt.plot(np.concatenate( (np.real(Fy), np.real(Fy) ) , axis = 0 ), 'b')
+    #plt.plot(np.concatenate( (np.imag(Fy), np.imag(Fy) ) , axis = 0 ), 'b--')
+    plt.plot([np.real(cx),np.real(cy)],[np.imag(cx), np.imag(cy)], 'bo')
+    plt.axvline(0)
+    plt.axhline(0)
     plt.show()
 
     #print cx
@@ -69,17 +70,17 @@ def C(filenames, f, kx):
 
 
 
-filenames = {'x': 'Results/EzSingle_fcen0.655_df0.01_kx0.25_ky0.02_res20-ex-001303.00.h5',
-             'y': 'Results/EzSingle_fcen0.655_df0.01_kx0.25_ky0.02_res20-ey-001303.00.h5'}
+filenames = {'x': 'Results/EzSingle_fcen0.82_df0.03_kx0.044_ky0.02_res20-ex-000635.80.h5',
+             'y': 'Results/EzSingle_fcen0.82_df0.03_kx0.044_ky0.02_res20-ey-000635.80.h5'}
 print "#####"
-print C(filenames, 'e', 0.25)
+print C(filenames, 'e', 0.044)
 print "#####"
 
-filenames = {'x': 'Results/EzSingle_fcen0.655_df0.01_kx0.25_ky0.02_res20-hx-001303.00.h5',
-             'y': 'Results/EzSingle_fcen0.655_df0.01_kx0.25_ky0.02_res20-hy-001303.00.h5'}
+filenames = {'x': 'Results/EzSingle_fcen0.82_df0.03_kx0.044_ky0_res20-hx-000635.80.h5',
+             'y': 'Results/EzSingle_fcen0.82_df0.03_kx0.044_ky0_res20-hy-000635.80.h5'}
 
 print "#####"
-print C(filenames, 'h', 0.25)
+print C(filenames, 'h', 0.044)
 print "#####"
 
 
