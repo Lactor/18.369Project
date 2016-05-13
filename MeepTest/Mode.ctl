@@ -19,6 +19,14 @@
 (define-param k-interp 5)
 
 
+(define-param kxmin 0)
+(define-param kymin 0)
+(define-param kxmax 0.1)
+(define-param kymax 0.1)
+(define-param k-interpx 6)
+(define-param k-interpy 6)
+
+
 (define-param fcen 0.655) ; pulse center frequency                               
 (define-param df 0.01)  ; pulse width (in frequency)   
 
@@ -56,6 +64,7 @@
 
 ;; Defines where the output is going to be placed
 (display strPrefix)
+(newline)
 (use-output-directory "Results")
 (set! filename-prefix strPrefix)
 
@@ -94,7 +103,16 @@
 	     )
 	   )
        (run-k-point runtime (vector3 targetkx targetky))
-       (run-until (/ 2 fcen)
+
+       (print pi "\n")
+       (define (CX r fx)
+	 (* (exp (* -1 (vector3-x r) targetkx 2 pi)) fx )
+	 )
+       (define (CY r fy)
+	 (* (exp (* -1 (vector3-x r) targetkx 2 pi)) fy )
+	 )
+  
+     (run-until (/ 2 fcen)
 		  (at-beginning output-epsilon )
 		  (at-every (/ 1 fcen 20) output-hfield-x)
 		  (at-every (/ 1 fcen 20) output-hfield-y)
@@ -103,7 +121,14 @@
 		  (at-every (/ 1 fcen 20) output-efield-y)
 		  (at-every (/ 1 fcen 20) output-efield-z)
 		  )
+     (print "CX_E: " (integrate-field-function (list Ex) CX) "\n")
+     (print "CY_E: " (integrate-field-function (list Ey) CY) "\n")
+
+     (print "CX_H: " (integrate-field-function (list Hx) CX) "\n")
+     (print "CY_H: " (integrate-field-function (list Hy) CY) "\n")
+
        )
+
     (begin
       
       (display "BAND CALCULATION\n\n")
@@ -124,11 +149,24 @@
 			     (component Hz) (center sourcex sourcey))))
 	    )
 	  )
-
-      (run-k-points runtime (interpolate k-interp (list (vector3 0 0 0) (vector3 0.1 0 0 ))))
+      
+      (define kpoints '())
+      (define kxpoints (interpolate k-interpx (list (vector3 kxmin 0 0) (vector3 kxmax 0 0))))
+      (for-each (lambda (x)
+		  (define t (interpolate k-interpy (list (vector3+ x (vector3 0 kymin 0))  (vector3+ x (vector3 0 kymax 0 ) ) ) ) )
+		  ;(display t)
+		  ;(newline)
+		  (set! kpoints (append kpoints t))
+		  ;(append( kpoints (interpolate k-interp (list x (vector3+ x (vector3 0 0.2 0))))))
+		  )
+		kxpoints)
+      (display kpoints)
+      ;(newline)
+      (run-k-points runtime kpoints)
       
       
       )
+
     )
 
 

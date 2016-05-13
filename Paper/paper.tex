@@ -1,0 +1,223 @@
+% Note to reader: lines beginning with the '%' character are
+% 'comments' to you, the human reader of this code, and are 
+% ignored by the LaTeX compiler.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% = Sample template for MIT Junior Lab Student Written Summaries =
+% Available from 
+%    http://web.mit.edu/8.13/www/Samplepaper/sample-paper.tex
+%
+% Last Updated July 23, 2014
+%
+% Adapted from the American Physical Societies REVTeK-4.1 Pages
+%    at http://publish.aps.org
+%
+% ADVICE TO STUDENTS: Each time you write a paper, start with this
+%    template and save under a new filename.  If convenient, don't
+%    erase unneeded lines, just comment them out using the 
+%    '%' character at the start of the line.  Often, they
+%    will be useful containers for information.
+%
+% Using pdflatex, images must be either PNG, GIF, JPEG or PDF.
+%    Turn EPS (encapsulated postscript) images to PDF using the
+%    epstopdf utility on UNIX systems.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% = TO COMPILE THIS DOCUMENT =
+%
+% From the command line, it would go like this --- assuming you are
+%    in the directory where the filename.tex source file and the 
+%    filename.bib bibliography file are located, and that you have 
+%    permission to create and write files in that directory:
+%      > pdflatex filename
+%      > bibtex filename
+%      > pdflatex filname
+%      > pdflatex filename
+%    Yes, you run the command several times. The earlier runs 
+%    create auxilliary files which keep track of references,
+%    citations, equation and section numberring, etc. The later
+%    runs combine the information in these auxilliary files with
+%    your source document to create the finished product.
+%
+% If you are using a GUI LaTeX editor like TeXWorks, then there
+%    is probably a menu bar button for pdfLaTeX and another for
+%    BibTeX. Hit them in the order indicated above. There is 
+%    probably also a 'TeXify' button, or something similarly named,
+%    which runs all the above commands in one shot.     
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  = PREAMBLE =
+% The preamble of a LaTeX document is the set of commands that precede
+% the \begin{document} line.  It contains a \documentclass line
+% to load the REVTeK-4.1 macro definitions and various \usepackage
+% lines to load other macro packages.
+%
+% ADVICE TO STUDENTS: This preamble contains a suggested set of
+%     class options to generate a ``Junior Lab'' look and feel that
+%     facilitate quick review and feedback from one's peers, TAs,
+%     and section instructors.  Don't make substantial changes 
+%     to the style without first consulting your section 
+%     instructor.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\documentclass[aps,twocolumn,secnumarabic,balancelastpage,amsmath,amssymb,nofootinbib, floatfix]{revtex4}
+\documentclass[aps,twocolumn,secnumarabic,balancelastpage,amsmath,amssymb,nofootinbib,floatfix]{revtex4-1}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% N.B.:  Different computers have different packages installed.  
+%        To compile this template in the current Athena 
+%        environment, REVTeX 4.1 must be used.  To use the older
+%        REVTeX 4, switch which documentclass line above is 
+%        commented out above. There are ``bad'' distributions of
+%        LaTeX for Windows available on the internet which may 
+%        cause users to struggle unjustifiably with REVTeX 4.1.
+%
+%        If you are unable to compile the template at all, you
+%        may need to update your LaTeX packages. (Alternatively, if 
+%        your LaTeX distribution includes only the older RevTEX 4,
+%        then try changing the documentclass line above. In particular,
+%        this approach solves a common compilation problem for users of
+%        the TeXWorks editor on Windows, which presents erroneously as a
+%        error in the bibliography file.) Don't hesitate to speak 
+%        with your section instructor or a TA if you're having 
+%        issues getting this template to compile.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% = Explanation of documentclass options =
+%
+% aps, prl stand for American Physical Society and Physical 
+%     Review Letters respectively.
+% twocolumn permits two columns, of course.
+% nobalancelastpage doesn't attempt to equalize the lengths of 
+%     the two columns on the last page  as might be desired in a 
+%     journal where articles follow one another closely.
+% amsmath and amssymb are necessary for the subequations 
+%     environment among others. These functionalities can
+%     also be added use the usepackage function described below,
+%     but REVTeX conveniently includes them as documentclass
+%     options.
+% secnumarabic identifies sections by number to aid electronic 
+%     review and commentary.
+% nofootinbib forces footnotes to occur on the page where they are
+%      first referenced and not in the bibliography.
+% floatfix attempts to help LaTeX decide where to place ``floats'',
+%      like figures and plots, when it gets stuck and can't decide
+%      by it's normal algorithm.
+% REVTeX 4.1 is a set of macro packages designed to be used with 
+%      LaTeX 2e. REVTeX is well-suited for preparing manuscripts 
+%      for submission to APS journals.
+%
+% = Other documentclasses =
+%
+% The 'revtex4' and 'revtex4-1' documentclasses are somewhat 
+%    specialized for making documents in the style of the APS
+%    journals. For a more standard or generic looking LaTeX paper,
+%    you could try any of the built-in documentclasses, in 
+%    particular 'article' or 'report'. Someday, you may try to use 
+%    the 'mitthesis'  documentclass available for download from the 
+%    MIT Libraries. The vast majority of source code written for 
+%    one documentclass should work just fine in any other, but 
+%    occasional quirks arise. For example, some documentclasses 
+%    disagree on whether the abstract declaration should come 
+%    before or after the \begin{document} declaration.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%% Now, include some packages which provide new commands that 
+%% extend LaTeX's capabilities. Note that the nearly-essential
+%% AMS math packages were added already as documentclass options
+%% for REVTeX, but could have been added here using 
+%% \usepackage{amsmath}, etc. The pacakges below are commonly 
+%% useful, but there are many, many more available to solve a 
+%% multitude of typesetting quandries (google your problem), 
+%% and you  probably have the necesary packages installed on your
+%% system already. Among the examples listed below, this sample
+%% document only actually makes use of the 'graphicx', 'bm', 
+%% and 'hyperref' pacakges, so the others are commented out for
+%% tidyness.
+
+
+\usepackage{graphicx}      % tools for importing graphics
+%\usepackage{lgrind}        % convert program code listings to a form 
+                            % includable in a LaTeX document
+%\usepackage{xcolor}        % produces boxes or entire pages with 
+                            % colored backgrounds
+%\usepackage{longtable}     % helps with long table options
+%\usepackage{epsf}          % old package handles encapsulated postscript issues
+\usepackage{bm}            % special bold-math package. usge: \bm{mathsymbol}
+%\usepackage{asymptote}     % For typesetting of mathematical illustrations
+%\usepackage{thumbpdf}
+\usepackage[colorlinks=true]{hyperref}  % this package should be added after 
+                                        % all others.
+                                        % usage: \url{http://web.mit.edu/8.13}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% And now, begin the document...
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\title{Polarization Topology and Optical Bound States in the Continuum}
+\author{Francisco Leal Machado}
+\email{fmachado@mit.edu}
+%\homepage{http://web.mit.edu/8.13/} %If you don't have one, just comment out this line.
+\date{\today}
+\affiliation{MIT Department of Physics}
+
+
+\begin{abstract}
+This paper analyzes how optical modes in photonic crystal slabs can decouple from the environment continuum of radiation through topological protected vortices in the polarization of outgoing radiation. We review previous work done in this area (cite)   the symmetry considerations used to find bound states in the continuum (BIC) which are robust yet not protected under symmetry. We analyze photonic crystal slabs periodic in one direction and extended the other, in order to demonstrate the existence of the theorized modes, their robustness and their prevalence in different systems. 
+\end{abstract}
+
+\maketitle
+
+\section{Introduction}
+
+The field of photonic crystals, periodic structures at the lengthscale of light, has had a great development in recent years, with amazing results in the way we understand and engineer the flow of light. This body of work has resulted in many applications ranging from more efficient optical fibers, new devices, and the realization of novel phenomena like the chiral propagation of light and the realization of systems with Weyl points.
+
+A topic of particular interest to engineering applications is the realization and control of bound states in the continuum (BIC). Usually modes, whose energy and momentum is above the light cone, in a finite system, couple to the external continuum of radiation, leading to losses in the mode. However, in BIC, these modes are completely uncoupled from the outside continuum, enabling them to be long lived. 
+
+BIC where initially proposed by von Neuman (and Wigner) in the context of Quantum Mechanics, through the description of very complex potentials. As a result from this complexity, these BIC were not robust under perturbations of the potential so they were never experimentally observed. More recent work had analyzed BIC that arise from a symmetry mismatch between the bound state and the continuum modes, which prevent the BIC to leak couple to the continuum degrees of freedom (cite). In this paper we analyze a new approach, proposed and observed in Zhen's paper, and then explained in the context of topology in a following work (cite). 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\bibliography{sample-paper}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\clearpage
+\appendix
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
