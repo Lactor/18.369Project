@@ -1,0 +1,21 @@
+import sys
+
+fcen = 0.82
+df = 0.03
+sourcex = -0.2
+sourcex = -0.1
+Ez? = 'true'
+single-mode? = 'true'
+
+Corners1 = [-0.044, 0.02]
+Corners2 = [-0.054, 0.02]
+Corners3 = [-0.054, -0.02]
+Corners4 = [-0.044, -0.02]
+
+dx = 0.002
+dy = 0.01
+
+
+        
+
+ meep fcen=0.82 df=0.03 sourcex=-0.2 sourcez=-0.2 Ez?=true single-mode?=true targetkx=0.054 targetky=0.01 Mode.ctl
