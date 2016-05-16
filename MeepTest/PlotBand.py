@@ -1,5 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
+
 
 def load(name, onlyFirst=False):
 
@@ -40,36 +42,18 @@ def drawEllipse(x0,y0, cx, cy, size):
     #print x
     #print y
 
-    plt.plot(x,y, "r-")
+    plt.plot(x,y, "w-")
 
 
-#fr = load('squareFR2.out')
-#fi = load('squareFI2.out')
+# 3c h1.4 DATA
+#hf = load('Q_fcen0.80_df0.40_h1.40_Eztrue_freqs.out', True) # TM Modes
+#hfi = load('Q_fcen0.80_df0.40_h1.40_Eztrue_freqsI.out', True) # TM Modes
 
-#frt20 = load('replicFT20.out')
-#fit20 = load('replicFIT20.out')
+hf = load('Q_fcen0.80_df0.20_h1.50_Eztrue_freqs.out', True) # TM Modes
+hfi = load('Q_fcen0.80_df0.20_h1.50_Eztrue_freqsI.out', True) # TM Modes
 
-#fr = load('replicF.out')
-#fi = load('replicFI.out')
-
-#frt20 = load('replickyT20F.out')
-#hf = load('EzSecondBandFreqs.out') # TM Modes
-#hfi = load('EzSecondBandFreqsI.out') # TM Modes
-#ef = load('HzSecondBandFreqs.out') # TE Modes
-#efi = load('HzSecondBandFreqsI.out') # TM Modes
-
-#hf = load('EzBand_h1.4.out', True) # TM Modes
-#hfi = load('EzBand_h1.4I.out', True) # TM Modes
-
-#hf = load('EzBand_h1.43_fcen0.88.out', True) # TM Modes
-#hfi = load('EzBand_h1.43_fcen0.88I.out', True) # TM Modes
-
-hf = load('3c_freq.out', True) # TM Modes
-hfi = load('3c_freqI.out', True) # TM Modes
-
-
-#ef = load('HzBand.out', True) # TE Modes
-#efi = load('HzBandI.out', True) # TM Modes
+#hf = load('3c_TE_h1.1_freq.out', True) # TM Modes
+#hfi = load('3c_TE_h1.1_freqI.out', True) # TM Modes
 
 #plt.axhline(0.7)
 #plt.axhspan(0.7 - 0.3, 0.7 + 0.3, alpha = 0.3)
@@ -104,19 +88,46 @@ Qh = hf[:,4]/(-2 * hfi[:,4])
 X = hf[:,1]
 Y = hf[:,2]
 
-Qh = np.rot90(np.resize(Qh, ( np.size(np.unique(X)), np.size(np.unique(Y)))))
-print Qh
 
-plt.imshow(np.log10(Qh), extent=[np.min(X),np.max(X),np.min(Y),np.max(Y)])
-plt.colorbar()
+fig = plt.subplots( figsize=(5,10))
+
+Qh = np.rot90(np.resize(Qh, ( np.size(np.unique(X)), np.size(np.unique(Y)))))
+#print np.shape(Qh)
+print Qh
+E = np.rot90(np.resize(hf[:,4], ( np.size(np.unique(X)), np.size(np.unique(Y)))))
+Y = np.rot90(np.resize(Y, ( np.size(np.unique(X)), np.size(np.unique(Y)))))
+X = np.rot90(np.resize(X, ( np.size(np.unique(X)), np.size(np.unique(Y)))))
+Data = np.log10(np.abs(Qh))
+#Data = Qh
+
+plt.imshow(Data, extent=[np.min(X),np.max(X),np.min(Y),np.max(Y)], interpolation = 'none')
+plt.colorbar( label='$\log_{10}(Q)$')
 
 # File containing the polarizations, kx, ky, cx, cy
-pol = np.loadtxt('pol.out', delimiter =' ', skiprows=1, dtype=complex)
+#pol = np.loadtxt('pol_fcen0.80_df0.20_h1.50_Eztrue.out', delimiter =' ', dtype=complex)
 for i in range(len(pol[:,0])):
-    drawEllipse(pol[i,0],pol[i,1], pol[i,2], pol[i,3], 0.001)
+    drawEllipse(pol[i,0],pol[i,1], pol[i,2], pol[i,3], 0.002)
 
-plt.xlim([0.03, 0.06])
-plt.ylim([-0.03, 0.03])
+plt.xlim([np.min(X),np.max(X)])
+plt.ylim([np.min(Y),np.max(Y)])
+
+#plt.xlim([0.03, 0.06])
+#plt.ylim([-0.03, 0.03])
+
+plt.ylabel('$k_y$')
+plt.xlabel('$k_x$')
+
+#plt.xticks([-0.05, 0.05])
+#plt.yticks([-0.3, 0 , 0.5])
+
+
+plt.savefig('h1.5.eps')
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+ax.plot_wireframe(X,Y,E)
 
 plt.show()
+
+
 

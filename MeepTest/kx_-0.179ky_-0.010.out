@@ -1,0 +1,38 @@
+command-line param: fcen=0.90
+command-line param: df=0.40
+command-line param: sourcex=-0.20
+command-line param: sourcez=-0.10
+command-line param: h=1.50
+command-line param: Ez?=true
+command-line param: single-mode?=true
+command-line param: targetkx=-0.179
+command-line param: targetky=-0.010
+-----------
+Initializing structure...
+Working in 3D dimensions.
+Computational cell is 1 x 0 x 10 with resolution 20
+     block, center = (0,0,0)
+          size (0.45,1e+20,1.5)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (2.1,2.1,2.1)
+time for set_epsilon = 0.022227 s
+-----------
+EzSingle_fcen0.9_df0.4_kx-0.179_ky-0.01_h1.5_res20
+SINGLE MODE CALCULATION
+
+Adding Ez Source
+Meep: using output directory "Results"
+harminv0:, frequency, imag. freq., Q, |amp|, amplitude, error
+harminv0:, 0.714320330712309, -3.12745557461156e-4, 1142.01515204741, 0.0210609543381749, -0.0192143781739789-0.00862388943702378i, 1.30492828247832e-7
+harminv0:, 0.787504295402471, -4.64861602656672e-4, 847.030912966251, 0.0147153645910135, -0.00917964302346678-0.0115011351182469i, 2.52434690637579e-6
+harminv0:, 0.827107236377271, -0.00582789441145927, 70.9610691256646, 0.0183245477806212, 0.0131083424018418-0.0128047026845744i, 2.22702337294093e-5
+harminv0:, 0.853517538639477, -0.00521200255944941, 81.8799999524215, 0.00649952194306299, -0.00249776470181956-0.00600041306767306i, 5.49157961303517e-5
+harminv0:, 1.00023520795116, -5.62124328601057e-4, 889.692152659905, 0.56933624304573, 0.5629500359605-0.0850353729779455i, 2.00389227985604e-9
+harminv0:, 1.07150056645009, -6.72198124534966e-4, 797.012463543668, 0.00326832697136089, 0.00316454407705548+8.17081376668257e-4i, 4.13667569824657e-7
+run 0 finished at t = 325.0 (13000 timesteps)
+3.14159265358979
+run 1 finished at t = 327.225 (13089 timesteps)
+creating output file "Results/EzSingle_fcen0.9_df0.4_kx-0.179_ky-0.01_h1.5_res20-ex-000327.23.h5"...
+creating output file "Results/EzSingle_fcen0.9_df0.4_kx-0.179_ky-0.01_h1.5_res20-ey-000327.23.h5"...
+
+Elapsed run time = 3.89644 s

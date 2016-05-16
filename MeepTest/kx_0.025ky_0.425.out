@@ -1,0 +1,39 @@
+command-line param: fcen=0.90
+command-line param: df=0.40
+command-line param: sourcex=-0.20
+command-line param: sourcez=-0.10
+command-line param: h=1.40
+command-line param: Ez?=true
+command-line param: single-mode?=true
+command-line param: targetkx=0.025
+command-line param: targetky=0.425
+-----------
+Initializing structure...
+Working in 3D dimensions.
+Computational cell is 1 x 0 x 10 with resolution 20
+     block, center = (0,0,0)
+          size (0.45,1e+20,1.4)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (2.1,2.1,2.1)
+time for set_epsilon = 0.022301 s
+-----------
+EzSingle_fcen0.9_df0.4_kx0.025_ky0.425_h1.4_res20
+SINGLE MODE CALCULATION
+
+Adding Ez Source
+Meep: using output directory "Results"
+Meep progress: 189.875/325.0 = 58.4% done in 4.0s, 2.8s to go
+on time step 7595 (time=189.875), 0.000526722 s/step
+harminv0:, frequency, imag. freq., Q, |amp|, amplitude, error
+harminv0:, 0.908028117105448, -1.13869575786191e-4, 3987.14103761317, 3.35877930477985, 2.16478290757448+2.56809528275156i, 1.20602222393682e-10
+harminv0:, 0.96005848577664, -7.57885757980173e-4, 633.379421415223, 0.380974535200892, -0.380242427611262+0.0236070480117656i, 3.17145549499765e-9
+harminv0:, 0.964489694891284, -0.00885755013932416, 54.4444953582208, 0.00567256967574006, 0.00416412279302161+0.00385202908747631i, 1.72165997258896e-5
+harminv0:, 0.991168951822884, -9.82684793132104e-4, 504.316826082013, 0.0891746439020585, 0.0589740431085907+0.0668893067274959i, 3.64609731908785e-8
+harminv0:, 1.06798636914672, -0.00329160884622109, 162.228627252113, 0.005295182549734, 0.00184525555438263+0.00496326406450709i, 1.18986845081599e-6
+run 0 finished at t = 325.0 (13000 timesteps)
+3.14159265358979
+run 1 finished at t = 327.225 (13089 timesteps)
+creating output file "Results/EzSingle_fcen0.9_df0.4_kx0.025_ky0.425_h1.4_res20-ex-000327.23.h5"...
+creating output file "Results/EzSingle_fcen0.9_df0.4_kx0.025_ky0.425_h1.4_res20-ey-000327.23.h5"...
+
+Elapsed run time = 6.62374 s

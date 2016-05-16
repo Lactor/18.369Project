@@ -1,0 +1,47 @@
+command-line param: fcen=0.80
+command-line param: df=0.20
+command-line param: sourcex=-0.20
+command-line param: sourcez=-0.10
+command-line param: h=1.50
+command-line param: Ez?=true
+command-line param: single-mode?=true
+command-line param: targetkx=0.034
+command-line param: targetky=-0.038
+-----------
+Initializing structure...
+Working in 3D dimensions.
+Computational cell is 1 x 0 x 10 with resolution 20
+     block, center = (0,0,-2.5)
+          size (1,1e+20,5)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (1.05,1.05,1.05)
+     block, center = (0,0,0)
+          size (0.45,1e+20,1.5)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (2.1,2.1,2.1)
+time for set_epsilon = 0.038085 s
+-----------
+SYMEzSingle_fcen0.8_df0.2_kx0.034_ky-0.038_h1.5_res20
+SINGLE MODE CALCULATION
+
+Adding Ez Source
+Meep: using output directory "Results"
+Meep progress: 315.675/350.0 = 90.2% done in 4.0s, 0.4s to go
+on time step 12627 (time=315.675), 0.000316789 s/step
+harminv0:, frequency, imag. freq., Q, |amp|, amplitude, error
+harminv0:, 0.82332555795541, -8.3288484869772e-6, 49426.1337112053, 3.95101576949557, 3.27908930785288-2.20410955306845i, 8.57148168681529e-12
+harminv0:, 0.881426562285323, -8.66320056046982e-5, 5087.18779008345, 0.0948916703670894, -0.0895362332946801+0.0314275680328111i, 3.47899915445769e-10
+harminv0:, 0.897567844529464, -5.48923586794762e-4, 817.570847857424, 0.00184184251715964, 0.00150948298353231+0.00105538854477551i, 1.03574815673301e-8
+run 0 finished at t = 350.0 (14000 timesteps)
+3.14159265358979
+run 1 finished at t = 352.5 (14100 timesteps)
+creating output file "Results/SYMEzSingle_fcen0.8_df0.2_kx0.034_ky-0.038_h1.5_res20-ex-000352.50.h5"...
+creating output file "Results/SYMEzSingle_fcen0.8_df0.2_kx0.034_ky-0.038_h1.5_res20-ey-000352.50.h5"...
+CX_E_TOP: 0.0231430854044328-0.0145218366025062i
+CY_E_TOP: 0.0153412860416898+5.68205977539727e-4i
+CX_E_BOT: -0.025211644741503-0.0163645836661833i
+CY_E_BOT: -0.0140153316813539-0.00712289416603401i
+CX_H: -0.0151035848972556-0.00156976034026216i
+CY_H: 0.0237860795342379-0.0128837886872039i
+
+Elapsed run time = 4.66641 s

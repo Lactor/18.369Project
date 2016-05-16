@@ -1,0 +1,45 @@
+command-line param: fcen=0.80
+command-line param: df=0.20
+command-line param: sourcex=-0.20
+command-line param: sourcez=-0.10
+command-line param: h=1.50
+command-line param: Ez?=true
+command-line param: single-mode?=true
+command-line param: targetkx=0.060
+command-line param: targetky=0.000
+-----------
+Initializing structure...
+Working in 3D dimensions.
+Computational cell is 1 x 0 x 10 with resolution 20
+     block, center = (0,0,-2.5)
+          size (1,1e+20,5)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (1.05,1.05,1.05)
+     block, center = (0,0,0)
+          size (0.45,1e+20,1.5)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (2.1,2.1,2.1)
+time for set_epsilon = 0.0390041 s
+-----------
+SYMEzSingle_fcen0.8_df0.2_kx0.06_ky0.0_h1.5_res20
+SINGLE MODE CALCULATION
+
+Adding Ez Source
+Meep: using output directory "Results"
+harminv0:, frequency, imag. freq., Q, |amp|, amplitude, error
+harminv0:, 0.803081625238083, -5.49169530319443e-6, 73117.8243602611, 4.40216886617702, -3.77735344117861+2.26068390244069i, 4.14768265103272e-12
+harminv0:, 0.876573029859244, -5.95847407231833e-4, 735.568384808114, 0.00263876540297584, -0.00134382610265013-0.00227095007822242i, 1.17951931166684e-8
+run 0 finished at t = 350.0 (14000 timesteps)
+3.14159265358979
+on time step 14000 (time=350), 0.000290533 s/step
+run 1 finished at t = 352.5 (14100 timesteps)
+creating output file "Results/SYMEzSingle_fcen0.8_df0.2_kx0.06_ky0.0_h1.5_res20-ex-000352.50.h5"...
+creating output file "Results/SYMEzSingle_fcen0.8_df0.2_kx0.06_ky0.0_h1.5_res20-ey-000352.50.h5"...
+CX_E_TOP: 0.022461722568378+0.0198318331569633i
+CY_E_TOP: 0.0
+CX_E_BOT: -0.0319497712113239+8.77390879314921e-4i
+CY_E_BOT: 0.0
+CX_H: 0.0
+CY_H: 0.021061046521087+0.02110122234065i
+
+Elapsed run time = 4.19032 s

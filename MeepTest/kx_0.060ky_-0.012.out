@@ -1,0 +1,46 @@
+command-line param: fcen=0.80
+command-line param: df=0.20
+command-line param: sourcex=-0.20
+command-line param: sourcez=-0.10
+command-line param: h=1.50
+command-line param: Ez?=true
+command-line param: single-mode?=true
+command-line param: targetkx=0.060
+command-line param: targetky=-0.012
+-----------
+Initializing structure...
+Working in 3D dimensions.
+Computational cell is 1 x 0 x 10 with resolution 20
+     block, center = (0,0,-2.5)
+          size (1,1e+20,5)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (1.05,1.05,1.05)
+     block, center = (0,0,0)
+          size (0.45,1e+20,1.5)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (2.1,2.1,2.1)
+time for set_epsilon = 0.0373352 s
+-----------
+SYMEzSingle_fcen0.8_df0.2_kx0.06_ky-0.012_h1.5_res20
+SINGLE MODE CALCULATION
+
+Adding Ez Source
+Meep: using output directory "Results"
+Meep progress: 328.25/350.0 = 93.8% done in 4.0s, 0.3s to go
+on time step 13130 (time=328.25), 0.000304651 s/step
+harminv0:, frequency, imag. freq., Q, |amp|, amplitude, error
+harminv0:, 0.80314513139812, -5.71929732819801e-6, 70213.6193757886, 4.40202390557806, -3.75444611384483+2.29824908213103i, 3.91918455592982e-12
+harminv0:, 0.876636401607106, -5.95024718264673e-4, 736.638642646413, 0.00262424786435567, -0.00135903145766432-0.0022449299211009i, 1.12824030633666e-8
+run 0 finished at t = 350.0 (14000 timesteps)
+3.14159265358979
+run 1 finished at t = 352.5 (14100 timesteps)
+creating output file "Results/SYMEzSingle_fcen0.8_df0.2_kx0.06_ky-0.012_h1.5_res20-ex-000352.50.h5"...
+creating output file "Results/SYMEzSingle_fcen0.8_df0.2_kx0.06_ky-0.012_h1.5_res20-ey-000352.50.h5"...
+CX_E_TOP: 0.0248307104160638+0.0167208828299163i
+CY_E_TOP: -0.00595358548047104-0.00182969940283571i
+CX_E_BOT: -0.0315188523694069+0.0050360346283573i
+CY_E_BOT: 0.00475051767388559+0.00432735465934026i
+CX_H: 0.00579141068078899+0.00219877828659273i
+CY_H: 0.0236121736238897+0.0181611382491319i
+
+Elapsed run time = 4.4991 s

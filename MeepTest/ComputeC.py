@@ -13,17 +13,17 @@ def C(filenames, f, kx):
     #z = np.ones((1, np.shape(F['x'][f+'x.r'][:])[1]))
     #Z,X = np.meshgrid(z,x)
 
-    PlanePosition = 40
+    PlanePosition = 30
     #bL = 60
     #X = X[:-1,tL:bL]
     #print np.shape(X)
 
     L = F['x'][f+'x.r'][:]
     L[:, PlanePosition] = 20
-    plt.imshow(np.transpose(L))
-    plt.colorbar()
+    #plt.imshow(np.transpose(L))
+    #plt.colorbar()
 
-    plt.show()
+    #plt.show()
 
     Fx = F['x'][f+'x.r'][:-1,PlanePosition] + 1j* F['x'][f+'x.i'][:-1,PlanePosition]
     Fy = F['y'][f+'y.r'][:-1,PlanePosition] + 1j* F['y'][f+'y.i'][:-1,PlanePosition]
@@ -48,20 +48,20 @@ def C(filenames, f, kx):
     #print cy
     #print np.angle(cx)
 
-    cy *= np.exp( -1j*np.angle(cx))
-    cx *= np.exp( -1j*np.angle(cx))
+    #cy *= np.exp( -1j*np.angle(cx))
+    #cx *= np.exp( -1j*np.angle(cx))
 
     #plt.imshow(np.transpose(np.real(Fx)))
     #plt.show()
     
-    #plt.plot(np.concatenate( (np.real(Fx), np.real(Fx) ) , axis = 0 ), 'r')
-    #plt.plot(np.concatenate( (np.imag(Fx), np.imag(Fx) ) , axis = 0 ), 'r--')
+    plt.plot(np.concatenate( (np.real(Fx), np.real(Fx) ) , axis = 0 ), 'r')
+    plt.plot(np.concatenate( (np.imag(Fx), np.imag(Fx) ) , axis = 0 ), 'r--')
 
     #plt.plot(np.concatenate( (np.real(Fy), np.real(Fy) ) , axis = 0 ), 'b')
     #plt.plot(np.concatenate( (np.imag(Fy), np.imag(Fy) ) , axis = 0 ), 'b--')
-    plt.plot([np.real(cx),np.real(cy)],[np.imag(cx), np.imag(cy)], 'bo')
-    plt.axvline(0)
-    plt.axhline(0)
+    #plt.plot([np.real(cx),np.real(cy)],[np.imag(cx), np.imag(cy)], 'bo')
+    #plt.axvline(0)
+    #plt.axhline(0)
     plt.show()
 
     #print cx
@@ -70,17 +70,17 @@ def C(filenames, f, kx):
 
 
 
-filenames = {'x': 'Results/EzSingle_fcen0.82_df0.03_kx0.044_ky0.02_res20-ex-000635.80.h5',
-             'y': 'Results/EzSingle_fcen0.82_df0.03_kx0.044_ky0.02_res20-ey-000635.80.h5'}
-print "#####"
-print C(filenames, 'e', 0.044)
-print "#####"
+# filenames = {'x': 'Results/EzSingle_fcen0.82_df0.03_kx0.044_ky0.02_res20-ex-000635.80.h5',
+#              'y': 'Results/EzSingle_fcen0.82_df0.03_kx0.044_ky0.02_res20-ey-000635.80.h5'}
+# print "#####"
+# print C(filenames, 'e', 0.044)
+# print "#####"
 
-filenames = {'x': 'Results/EzSingle_fcen0.82_df0.03_kx0.044_ky0_res20-hx-000635.80.h5',
-             'y': 'Results/EzSingle_fcen0.82_df0.03_kx0.044_ky0_res20-hy-000635.80.h5'}
+# filenames = {'x': 'Results/EzSingle_fcen0.82_df0.03_kx0.044_ky0_res20-hx-000635.80.h5',
+#              'y': 'Results/EzSingle_fcen0.82_df0.03_kx0.044_ky0_res20-hy-000635.80.h5'}
 
-print "#####"
-print C(filenames, 'h', 0.044)
-print "#####"
+# print "#####"
+# print C(filenames, 'h', 0.044)
+# print "#####"
 
 

@@ -1,0 +1,40 @@
+command-line param: fcen=0.80
+command-line param: df=0.20
+command-line param: sourcex=-0.20
+command-line param: sourcez=-0.10
+command-line param: h=1.10
+command-line param: Ez?=false
+command-line param: single-mode?=true
+command-line param: targetkx=0.010
+command-line param: targetky=0.030
+-----------
+Initializing structure...
+Working in 3D dimensions.
+Computational cell is 1 x 0 x 10 with resolution 20
+     block, center = (0,0,0)
+          size (0.45,1e+20,1.1)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (2.1,2.1,2.1)
+time for set_epsilon = 0.021771 s
+-----------
+HzSingle_fcen0.8_df0.2_kx0.01_ky0.03_h1.1_res20
+SINGLE MODE CALCULATION
+
+Adding Hz Source
+Meep: using output directory "Results"
+Meep progress: 332.575/350.0 = 95.0% done in 4.0s, 0.2s to go
+on time step 13303 (time=332.575), 0.000300706 s/step
+harminv0:, frequency, imag. freq., Q, |amp|, amplitude, error
+harminv0:, 0.849830252016823, -3.46475976995974e-5, 12263.9130623867, 0.232638398462229, -0.00231349981787159+0.232626894742769i, 1.44643550622796e-10
+harminv0:, 0.881601700490783, -0.00121042505440623, 364.170295914458, 0.338473776767436, -0.326273349361569+0.0900566435949943i, 1.79717206598883e-10
+run 0 finished at t = 350.0 (14000 timesteps)
+3.14159265358979
+run 1 finished at t = 352.5 (14100 timesteps)
+creating output file "Results/HzSingle_fcen0.8_df0.2_kx0.01_ky0.03_h1.1_res20-ex-000352.50.h5"...
+creating output file "Results/HzSingle_fcen0.8_df0.2_kx0.01_ky0.03_h1.1_res20-ey-000352.50.h5"...
+CX_E: 3.02123021483843e-5-3.06832463609773e-5i
+CY_E: 0.0064436804260111-0.00498997678313554i
+CX_H: -0.00671043670314052+0.00451532278404798i
+CY_H: 3.47331407698423e-5-3.01097407655956e-5i
+
+Elapsed run time = 4.41603 s

@@ -54,11 +54,11 @@
 (if single-mode?
     (begin
       (set! strType "Single")
-      (set! strPrefix (string-append strField strType "_fcen" (number->string fcen) "_df" (number->string df) "_kx" (number->string targetkx) "_ky" (number->string targetky) "_res" (number->string resolution)))
+      (set! strPrefix (string-append strField strType "_fcen" (number->string fcen) "_df" (number->string df) "_kx" (number->string targetkx) "_ky" (number->string targetky) "_h" (number->string h) "_res" (number->string resolution)))
       )
     (begin
       (set! strType "Band")
-      (set! strPrefix (string-append strField strType "_fcen" (number->string fcen) "_df" (number->string df)"_res" (number->string resolution)))
+      (set! strPrefix (string-append strField strType "_fcen" (number->string fcen) "_df" (number->string df)  "_h" (number->string h) "_res" (number->string resolution)))
       )
 )
 
@@ -113,18 +113,21 @@
 	 )
   
      (run-until (/ 2 fcen)
-		  (at-beginning output-epsilon )
-		  (at-every (/ 1 fcen 20) output-hfield-x)
-		  (at-every (/ 1 fcen 20) output-hfield-y)
-		  (at-every (/ 1 fcen 20) output-hfield-z)
-		  (at-every (/ 1 fcen 20) output-efield-x)
-		  (at-every (/ 1 fcen 20) output-efield-y)
-		  (at-every (/ 1 fcen 20) output-efield-z)
+;		  (at-beginning output-epsilon )
+;		  (at-every (/ 1 fcen 20) output-hfield-x)
+;		  (at-every (/ 1 fcen 20) output-hfield-y)
+;		  (at-every (/ 1 fcen 20) output-hfield-z)
+;		  (at-every (/ 1 fcen 20) output-efield-x)
+;		  (at-every (/ 1 fcen 20) output-efield-y)
+;		  (at-every (/ 1 fcen 20) output-efield-z)
 		  )
+
+     (output-efield-x)
+     (output-efield-y)
      (print "CX_E: " (integrate-field-function (list Ex) CX (volume (size 1 0 0) (center 0 0 (- (/ sz 2) (* dPML 2)) ) )) "\n")
      (print "CY_E: " (integrate-field-function (list Ey) CY (volume (size 1 0 0) (center 0 0  (- (/ sz 2) (* dPML 2))) ) ) "\n")
 
-     (output-field-function "weird-function" (list Ex) CX)
+     ;(output-field-function "weird-function" (list Ex) CX)
 
 
      (print "CX_H: " (integrate-field-function (list Hx) CX (volume (size 1 0 0) (center 0 0 (- (/ sz 2) (* dPML 2))) ) ) "\n")

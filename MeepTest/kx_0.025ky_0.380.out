@@ -1,0 +1,40 @@
+command-line param: fcen=0.90
+command-line param: df=0.40
+command-line param: sourcex=-0.20
+command-line param: sourcez=-0.10
+command-line param: h=1.40
+command-line param: Ez?=true
+command-line param: single-mode?=true
+command-line param: targetkx=0.025
+command-line param: targetky=0.380
+-----------
+Initializing structure...
+Working in 3D dimensions.
+Computational cell is 1 x 0 x 10 with resolution 20
+     block, center = (0,0,0)
+          size (0.45,1e+20,1.4)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (2.1,2.1,2.1)
+time for set_epsilon = 0.023422 s
+-----------
+EzSingle_fcen0.9_df0.4_kx0.025_ky0.38_h1.4_res20
+SINGLE MODE CALCULATION
+
+Adding Ez Source
+Meep: using output directory "Results"
+Meep progress: 227.275/325.0 = 69.9% done in 4.0s, 1.7s to go
+on time step 9091 (time=227.275), 0.000440037 s/step
+harminv0:, frequency, imag. freq., Q, |amp|, amplitude, error
+harminv0:, 0.89445934457551, -1.03221195377259e-4, 4332.73099244001, 3.23353459125304, -1.16232409145397+3.01740760575293i, 5.39495831344206e-10
+harminv0:, 0.945041904453203, -6.07749685537742e-4, 777.492713646591, 0.503774192951797, -0.224981782576496-0.450745643343268i, 5.54965131090198e-9
+harminv0:, 0.977633722826904, -0.00108170196853011, 451.89606345793, 0.115989789530569, -0.0392739239183391+0.109138399179217i, 1.79653638677586e-7
+harminv0:, 1.02070790544854, -6.21904266332132e-4, 820.631052644545, 0.0130824781663084, -0.00134558038173283-0.0130130952662398i, 2.06391474473456e-7
+harminv0:, 1.05050528269635, -0.00110085056762603, 477.133460975429, 0.00108116970640851, -2.7745885369836e-4+0.00104496149142438i, 4.93447822068323e-7
+harminv0:, 1.09449739841336, -0.00139627202482299, 391.93558953962, 5.07143561972964e-4, -4.75653806118397e-4-1.75920576328377e-4i, 2.60850505484866e-6
+run 0 finished at t = 325.0 (13000 timesteps)
+3.14159265358979
+run 1 finished at t = 327.225 (13089 timesteps)
+creating output file "Results/EzSingle_fcen0.9_df0.4_kx0.025_ky0.38_h1.4_res20-ex-000327.23.h5"...
+creating output file "Results/EzSingle_fcen0.9_df0.4_kx0.025_ky0.38_h1.4_res20-ey-000327.23.h5"...
+
+Elapsed run time = 6.09798 s

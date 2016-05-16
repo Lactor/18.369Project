@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.23)  13 MAY 2016 08:52
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.12.23)  16 MAY 2016 00:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**paper.tex
+**paper
 (./paper.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
@@ -411,55 +411,229 @@ LaTeX Info: Redefining \nameref on input line 163.
 Class revtex4-1 Info: Taking \maketitle back from hyperref on input line 163.
 \openout3 = `paperNotes.bib'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 176.
+LaTeX Font Info:    Try loading font information for U+msa on input line 173.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 176.
+LaTeX Font Info:    Try loading font information for U+msb on input line 173.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-No file paper.bbl.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
-(./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
+)
+Underfull \hbox (badness 1442) in paragraph at lines 185--186
+\OT1/cmr/m/n/10 Wigner [[]] in the con-text of Quan-tum Me-chan-ics,
+ []
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+<Figures/schematic.png, id=107, 688.171pt x 224.84pt>
+File: Figures/schematic.png Graphic file (type png)
+
+<use Figures/schematic.png>
+Package pdftex.def Info: Figures/schematic.png used on input line 284.
+(pdftex.def)             Requested size: 255.0pt x 83.313pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 284--285
+ [][] 
+ []
+
+<Figures/polarization.png, id=109, 207.977pt x 197.538pt>
+File: Figures/polarization.png Graphic file (type png)
+
+<use Figures/polarization.png>
+Package pdftex.def Info: Figures/polarization.png used on input line 293.
+(pdftex.def)             Requested size: 153.00156pt x 145.32582pt.
+Package epstopdf Info: Source file: <Figures/BandDiagram.eps>
+(epstopdf)                    date: 2016-05-16 00:00:31
+(epstopdf)                    size: 38350 bytes
+(epstopdf)             Output file: <Figures/BandDiagram-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-05-16 00:08:31
+(epstopdf)                    size: 44498 bytes
+(epstopdf)             Command: <repstopdf --outfile=Figures/BandDiagram-eps-co
+nverted-to.pdf Figures/BandDiagram.eps>
+(epstopdf)             \includegraphics on input line 307.
+Package epstopdf Info: Output file is already uptodate.
+
+<Figures/BandDiagram-eps-converted-to.pdf, id=112, 578.16pt x 433.62pt>
+File: Figures/BandDiagram-eps-converted-to.pdf Graphic file (type pdf)
+
+<use Figures/BandDiagram-eps-converted-to.pdf>
+Package pdftex.def Info: Figures/BandDiagram-eps-converted-to.pdf used on input
+ line 307.
+(pdftex.def)             Requested size: 255.0pt x 191.24992pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 307--308
+ [][] 
+ []
+
+[3 <./Figures/schematic.png> <./Figures/polarization.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 314.
 
 
-Package rerunfilecheck Warning: File `paper.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `paper.out':
-(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
-(rerunfilecheck)             After:  72D875EBE11CA6819360220C0413DEE4;211.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
+LaTeX Warning: A float is stuck (cannot be placed) on input line 314.
 
 
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+<Figures/h1_5-eps-converted-to-cropped.pdf, id=130, 542.025pt x 246.9225pt>
+File: Figures/h1_5-eps-converted-to-cropped.pdf Graphic file (type pdf)
+
+<use Figures/h1_5-eps-converted-to-cropped.pdf>
+Package pdftex.def Info: Figures/h1_5-eps-converted-to-cropped.pdf used on inpu
+t line 318.
+(pdftex.def)             Requested size: 255.0pt x 116.16661pt.
+
+<Figures/h1_4-eps-converted-to-cropped.pdf, id=133, 240.9pt x 408.77719pt>
+File: Figures/h1_4-eps-converted-to-cropped.pdf Graphic file (type pdf)
+
+<use Figures/h1_4-eps-converted-to-cropped.pdf>
+Package pdftex.def Info: Figures/h1_4-eps-converted-to-cropped.pdf used on inpu
+t line 324.
+(pdftex.def)             Requested size: 127.5pt x 216.35147pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 316--329
+ []$[]$ 
+ []
+
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 316--329
+ []$ 
+ []
+
+
+<Figures/h1_1-eps-converted-to-cropped.pdf, id=136, 420.82219pt x 388.45125pt>
+File: Figures/h1_1-eps-converted-to-cropped.pdf Graphic file (type pdf)
+
+<use Figures/h1_1-eps-converted-to-cropped.pdf>
+Package pdftex.def Info: Figures/h1_1-eps-converted-to-cropped.pdf used on inpu
+t line 339.
+(pdftex.def)             Requested size: 255.0pt x 235.38417pt.
+
+<Figures/h1-eps-converted-to-cropped.pdf, id=137, 542.025pt x 252.945pt>
+File: Figures/h1-eps-converted-to-cropped.pdf Graphic file (type pdf)
+
+<use Figures/h1-eps-converted-to-cropped.pdf>
+Package pdftex.def Info: Figures/h1-eps-converted-to-cropped.pdf used on input 
+line 343.
+(pdftex.def)             Requested size: 255.0pt x 118.99995pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 337--345
+ []$[]$ 
+ []
+
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 337--345
+ []$ 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 354.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\sigma' on input line 354.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 354.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 354.
+
+<Figures/broken_symmetry.png, id=140, 343.684pt x 224.84pt>
+File: Figures/broken_symmetry.png Graphic file (type png)
+
+<use Figures/broken_symmetry.png>
+Package pdftex.def Info: Figures/broken_symmetry.png used on input line 360.
+(pdftex.def)             Requested size: 178.50311pt x 116.78023pt.
+ [4 <./Figures/BandDiagram-eps-converted-to.pdf> <./Figures/h1_5-eps-converted-
+to-cropped.pdf> <./Figures/h1_4-eps-converted-to-cropped.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 368.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 368.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+<Figures/Sigma_z_all-cropped.pdf, id=238, 517.01941pt x 427.77725pt>
+File: Figures/Sigma_z_all-cropped.pdf Graphic file (type pdf)
+
+<use Figures/Sigma_z_all-cropped.pdf>
+Package pdftex.def Info: Figures/Sigma_z_all-cropped.pdf used on input line 377
+.
+(pdftex.def)             Requested size: 255.0pt x 210.98343pt.
+
+Overfull \hbox (9.0pt too wide) in paragraph at lines 377--378
+ [][] 
+ []
+
+[5 <./Figures/h1_1-eps-converted-to-cropped.pdf> <./Figures/h1-eps-converted-to
+-cropped.pdf> <./Figures/broken_symmetry.png>]
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 391.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 391.
+
+
+Class revtex4-1 Warning: Deferred float stuck during \clearpage processing.
+
+(./paper.bbl
+Missing character: There is no Â in font cmr9!
+Missing character: There is no   in font cmr9!
+Missing character: There is no Â in font cmr9!
+Missing character: There is no   in font cmr9!
+
+Underfull \hbox (badness 6396) in paragraph at lines 155--159
+ \OT1/cmr/m/n/9 Joannopou-los,  and M. Solja^^Tci^^Sc, [][] , 15 (2015)[][],
+ []
+
+) [6 <./Figures/Sigma_z_all-cropped.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 401.
+ (./paper.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 401.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 401.
+Package rerunfilecheck Info: File `paper.out' has not changed.
+(rerunfilecheck)             Checksum: 7F365914000EF0D796AC321E65460A80;594.
  ) 
 Here is how much of TeX's memory you used:
- 7913 strings out of 493304
- 110920 string characters out of 6139870
- 210699 words of memory out of 5000000
- 11276 multiletter control sequences out of 15000+600000
- 14602 words of font info for 54 fonts, out of 8000000 for 9000
+ 8097 strings out of 493304
+ 114282 string characters out of 6139870
+ 229977 words of memory out of 5000000
+ 11401 multiletter control sequences out of 15000+600000
+ 16629 words of font info for 62 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 34i,8n,28p,652b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,9n,31p,1140b,397s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmti9.pfb>
-Output written on paper.pdf (1 page, 94370 bytes).
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cmextra/cmmib7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+r5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/symbols/msbm10.pfb>
+Output written on paper.pdf (6 pages, 869333 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 416 PDF objects out of 1000 (max. 8388607)
+ 256 compressed objects within 3 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 118 words of extra memory for PDF output out of 10000 (max. 10000000)
 

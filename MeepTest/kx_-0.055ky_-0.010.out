@@ -1,0 +1,39 @@
+command-line param: fcen=0.82
+command-line param: df=0.10
+command-line param: sourcex=-0.20
+command-line param: sourcez=-0.10
+command-line param: h=1.50
+command-line param: Ez?=true
+command-line param: single-mode?=true
+command-line param: targetkx=-0.055
+command-line param: targetky=-0.010
+-----------
+Initializing structure...
+Working in 3D dimensions.
+Computational cell is 1 x 0 x 10 with resolution 20
+     block, center = (0,0,0)
+          size (0.45,1e+20,1.5)
+          axes (1,0,0), (0,1,0), (0,0,1)
+          dielectric constant epsilon diagonal = (2.1,2.1,2.1)
+time for set_epsilon = 0.0221519 s
+-----------
+EzSingle_fcen0.82_df0.1_kx-0.055_ky-0.01_h1.5_res20
+SINGLE MODE CALCULATION
+
+Adding Ez Source
+Meep: using output directory "Results"
+Meep progress: 353.35/400.0 = 88.3% done in 4.0s, 0.5s to go
+on time step 14134 (time=353.35), 0.000283019 s/step
+harminv0:, frequency, imag. freq., Q, |amp|, amplitude, error
+harminv0:, 0.811874414785378, -1.29074930695593e-6, 314497.327409024, 7.94778529360558, 6.32978446124249-4.80636242364911i, 2.46136768955244e-12
+run 0 finished at t = 400.0 (16000 timesteps)
+3.14159265358979
+run 1 finished at t = 402.45 (16098 timesteps)
+creating output file "Results/EzSingle_fcen0.82_df0.1_kx-0.055_ky-0.01_h1.5_res20-ex-000402.45.h5"...
+creating output file "Results/EzSingle_fcen0.82_df0.1_kx-0.055_ky-0.01_h1.5_res20-ey-000402.45.h5"...
+CX_E: 0.01924863511131-0.0154134010496966i
+CY_E: 0.00920978990926286-0.00303798047148525i
+CX_H: -0.00930469361808622+0.00243169140412648i
+CY_H: 0.0200803737945686-0.0140746315584875i
+
+Elapsed run time = 4.71864 s
